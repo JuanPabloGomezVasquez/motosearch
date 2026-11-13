@@ -122,10 +122,27 @@ def longitud_a_mm(texto: str) -> float | None:
     v = parse_numero(t)
     if v is None:
         return None
-    if re.search(r"\bmm\b", t):
+    if re.search(r"(?<![a-z])mm\b", t):
         return v
-    if re.search(r"\bcm\b", t):
+    if re.search(r"(?<![a-z])cm\b", t):
         return v * 10
     if re.search(r"\bm\b", t) and v < 5:
         return v * 1000
+    return None
+
+
+def volumen_a_litros(texto: str) -> float | None:
+    """'12 L / 3.17 Gal' -> 12; '3,4 Galones (13 Lt)' -> 13; '3,4 galones' -> 12.87.
+
+    Prefiere el número que va seguido de litros; si solo hay galones, convierte (galón US).
+    Sin unidad reconocible devuelve None para no confundir galones con litros.
+    """
+    t = texto.lower()
+    m = re.search(rf"({_NUM})\s*(?:l\b|lt|litro)", t)
+    if m:
+        return parse_numero(m.group(1))
+    m = re.search(rf"({_NUM})\s*gal", t)
+    if m:
+        v = parse_numero(m.group(1))
+        return round(v * LITROS_POR_GALON_US, 2) if v is not None else None
     return None

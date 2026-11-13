@@ -1,1 +1,20 @@
-marca,modelo,anio_modelo,variante,fecha,valor_cop,tipo,incluye_matricula,incluye_soat,fuente_url
+marca,modelo,anio_modelo,variante,fecha,valor_cop,tipo,incluye_matricula,incluye_soat,fuente_url,notas
+suzuki,Viva FI,2027,ABS,2026-11-13,9999500,sugerido_marca,no,no,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,'Precio normal' (otros medios de pago). Desde $9.099.500 con bono hasta el 30-nov-2026
+suzuki,Address NM,2027,,2026-11-13,7990000,sugerido_marca,no,no,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,Válido del 1 al 30 de noviembre de 2026
+suzuki,Gixxer FI 150,2027,ABS,2026-11-13,11390000,sugerido_marca,no,no,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,'Precio normal'. Desde $10.890.000 con bono; SOAT gratis en noviembre 2026
+suzuki,DR 150,2027,ABS,2026-11-13,10990000,sugerido_marca,no,no,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,'Precio normal'. Desde $10.590.000 con bono hasta el 30-nov-2026
+yamaha,Crypton FINN,2027,,2026-11-13,9100000,sugerido_marca,no,no,https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/,IVA incluido; sin fecha de vigencia publicada
+yamaha,NMAX 155,2027,,2026-11-13,16800000,sugerido_marca,no,no,https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/,IVA incluido; sin fecha de vigencia publicada
+yamaha,FZ 3.0,2027,,2026-11-13,11800000,sugerido_marca,no,no,https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/,IVA incluido; sin fecha de vigencia publicada
+yamaha,XTZ150,2027,ABS,2026-11-13,14500000,sugerido_marca,no,no,https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/,IVA incluido; sin fecha de vigencia publicada
+honda,DIO LED,2027,STD,2026-11-13,7390000,sugerido_marca,,,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,'Precio normal'. Desde $7.090.000 con descuento. 'Precios informativos sujeto a actualizaciones'
+honda,CB 125F,2027,STD,2026-11-13,6890000,sugerido_marca,,,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,'Precio normal'. Desde $6.339.000 con descuento
+honda,CB 190R,2027,2.0,2026-11-13,12590000,sugerido_marca,,,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,'Precio normal'. Desde $12.190.000 con descuento
+honda,XR 190L,2027,2.0,2026-11-13,13900000,sugerido_marca,,,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,'Precio normal'. Desde $13.500.000 con descuento
+hero,Eco Deluxe,2027,,2026-11-13,5990000,sugerido_marca,no,no,https://heromotos.com.co/trabajo/eco-deluxe/,'Precio antes'. $4.990.000 financiando con Progreser
+hero,Hunk 160R,2027,4V,2026-11-13,10990000,sugerido_marca,no,no,https://heromotos.com.co/urbanas/hunk-160r-4v/,'Precio antes'. Desde $10.190.000 con bono
+hero,Xpulse 200,2027,4V,2026-11-13,12390000,sugerido_marca,no,no,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,'Precio antes'. $11.490.000 con Progreser (la meta descripción dice $11.390.000)
+vento,Rapid 125,2027,,2026-11-13,4490000,sugerido_marca,no,no,https://vento.com.co/rapid-125/,Válido hasta el 30 de noviembre de 2026
+vento,Ovni 125,2027,,2026-11-13,4990000,sugerido_marca,no,no,https://vento.com.co/ovni-125/,Válido hasta el 30 de noviembre de 2026
+vento,Screamer Sportivo 250,2027,EFI,2026-11-13,8990000,sugerido_marca,no,no,https://vento.com.co/screamer-sportivo-250/,Válido hasta el 30 de noviembre de 2026
+vento,Crossmax 200,2027,PRO,2026-11-13,7990000,sugerido_marca,no,no,https://vento.com.co/crossmax-200-pro/,Válido hasta el 30 de noviembre de 2026

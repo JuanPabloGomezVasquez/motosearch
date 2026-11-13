@@ -6,6 +6,7 @@ from motosearch.units import (
     parse_numero,
     potencia_a_hp,
     torque_a_nm,
+    volumen_a_litros,
 )
 
 
@@ -47,3 +48,13 @@ def test_consumo_km_l_a_km_gal():
 def test_longitud():
     assert longitud_a_mm("790 mm") == 790
     assert longitud_a_mm("79 cm") == 790
+    assert longitud_a_mm("770mm") == 770
+    assert longitud_a_mm("85cm") == 850
+
+
+def test_volumen_prefiere_litros_y_no_confunde_galones():
+    assert volumen_a_litros("12 L / 3.17 Gal") == 12
+    assert volumen_a_litros("3,4 Galones (13 Lt)") == 13
+    assert volumen_a_litros("Volumen total: 3,9 Litro") == 3.9
+    assert volumen_a_litros("3,4 galones") == pytest.approx(12.87, abs=0.01)
+    assert volumen_a_litros("12") is None
