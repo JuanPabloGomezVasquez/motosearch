@@ -1,0 +1,4951 @@
+{
+ "generado": "2026-11-13",
+ "atributos": {
+  "cilindrada": {
+   "nombre": "Cilindrada",
+   "grupo": "motor",
+   "tipo": "numero",
+   "unidad": "cc",
+   "rankeable": true,
+   "nota": null,
+   "orden": 0
+  },
+  "potencia_max": {
+   "nombre": "Potencia máxima",
+   "grupo": "motor",
+   "tipo": "numero",
+   "unidad": "hp",
+   "rankeable": true,
+   "nota": "Convertida a hp desde la unidad que declara la marca",
+   "orden": 1
+  },
+  "torque_max": {
+   "nombre": "Torque máximo",
+   "grupo": "motor",
+   "tipo": "numero",
+   "unidad": "N·m",
+   "rankeable": true,
+   "nota": null,
+   "orden": 2
+  },
+  "potencia_electrica": {
+   "nombre": "Potencia nominal (eléctrica)",
+   "grupo": "motor",
+   "tipo": "numero",
+   "unidad": "kW",
+   "rankeable": true,
+   "nota": null,
+   "orden": 3
+  },
+  "cilindros": {
+   "nombre": "Número de cilindros",
+   "grupo": "motor",
+   "tipo": "numero",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 4
+  },
+  "tiempos": {
+   "nombre": "Tiempos",
+   "grupo": "motor",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 5
+  },
+  "refrigeracion": {
+   "nombre": "Refrigeración",
+   "grupo": "motor",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 6
+  },
+  "alimentacion": {
+   "nombre": "Alimentación",
+   "grupo": "motor",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 7
+  },
+  "norma_emisiones": {
+   "nombre": "Norma de emisiones",
+   "grupo": "motor",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 8
+  },
+  "arranque": {
+   "nombre": "Arranque",
+   "grupo": "motor",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 9
+  },
+  "transmision_tipo": {
+   "nombre": "Tipo de transmisión",
+   "grupo": "transmision",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 10
+  },
+  "marchas": {
+   "nombre": "Número de marchas",
+   "grupo": "transmision",
+   "tipo": "numero",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 11
+  },
+  "peso_seco": {
+   "nombre": "Peso en seco",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "kg",
+   "rankeable": true,
+   "nota": "Sin fluidos. No comparable con peso en orden de marcha",
+   "orden": 12
+  },
+  "peso_orden_marcha": {
+   "nombre": "Peso en orden de marcha",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "kg",
+   "rankeable": true,
+   "nota": "Con fluidos y tanque al 90% o lleno según marca",
+   "orden": 13
+  },
+  "peso_sin_especificar": {
+   "nombre": "Peso (tipo no declarado)",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "kg",
+   "rankeable": false,
+   "nota": "La marca no dice si es seco o en orden de marcha. No comparable entre marcas",
+   "orden": 14
+  },
+  "capacidad_tanque": {
+   "nombre": "Capacidad del tanque",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "L",
+   "rankeable": true,
+   "nota": null,
+   "orden": 15
+  },
+  "altura_sillin": {
+   "nombre": "Altura del sillín",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "mm",
+   "rankeable": true,
+   "nota": null,
+   "orden": 16
+  },
+  "distancia_ejes": {
+   "nombre": "Distancia entre ejes",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "mm",
+   "rankeable": true,
+   "nota": null,
+   "orden": 17
+  },
+  "distancia_piso": {
+   "nombre": "Distancia al piso",
+   "grupo": "dimensiones",
+   "tipo": "numero",
+   "unidad": "mm",
+   "rankeable": true,
+   "nota": null,
+   "orden": 18
+  },
+  "freno_delantero": {
+   "nombre": "Freno delantero",
+   "grupo": "frenos",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 19
+  },
+  "freno_trasero": {
+   "nombre": "Freno trasero",
+   "grupo": "frenos",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 20
+  },
+  "disco_delantero_mm": {
+   "nombre": "Diámetro disco delantero",
+   "grupo": "frenos",
+   "tipo": "numero",
+   "unidad": "mm",
+   "rankeable": true,
+   "nota": null,
+   "orden": 21
+  },
+  "abs": {
+   "nombre": "ABS",
+   "grupo": "frenos",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 22
+  },
+  "cbs": {
+   "nombre": "Frenado combinado (CBS)",
+   "grupo": "frenos",
+   "tipo": "booleano",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 23
+  },
+  "suspension_delantera": {
+   "nombre": "Suspensión delantera",
+   "grupo": "chasis",
+   "tipo": "texto",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 24
+  },
+  "suspension_trasera": {
+   "nombre": "Suspensión trasera",
+   "grupo": "chasis",
+   "tipo": "texto",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 25
+  },
+  "recorrido_delantero": {
+   "nombre": "Recorrido susp. delantera",
+   "grupo": "chasis",
+   "tipo": "numero",
+   "unidad": "mm",
+   "rankeable": true,
+   "nota": null,
+   "orden": 26
+  },
+  "llanta_delantera": {
+   "nombre": "Llanta delantera",
+   "grupo": "chasis",
+   "tipo": "texto",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 27
+  },
+  "llanta_trasera": {
+   "nombre": "Llanta trasera",
+   "grupo": "chasis",
+   "tipo": "texto",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 28
+  },
+  "consumo_declarado": {
+   "nombre": "Consumo declarado",
+   "grupo": "consumo",
+   "tipo": "numero",
+   "unidad": "km/gal",
+   "rankeable": false,
+   "nota": "Declarado por la marca, sin protocolo común. No se usa en rankings",
+   "orden": 29
+  },
+  "autonomia_declarada": {
+   "nombre": "Autonomía declarada (eléctrica)",
+   "grupo": "consumo",
+   "tipo": "numero",
+   "unidad": "km",
+   "rankeable": false,
+   "nota": "Declarada por la marca",
+   "orden": 30
+  },
+  "iluminacion_led": {
+   "nombre": "Iluminación LED",
+   "grupo": "equipamiento",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 31
+  },
+  "tablero": {
+   "nombre": "Tablero",
+   "grupo": "equipamiento",
+   "tipo": "enum",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 32
+  },
+  "conectividad": {
+   "nombre": "Conectividad con celular",
+   "grupo": "equipamiento",
+   "tipo": "booleano",
+   "unidad": null,
+   "rankeable": false,
+   "nota": null,
+   "orden": 33
+  }
+ },
+ "segmentos": {
+  "trabajo": {
+   "nombre": "Trabajo / urbana básica",
+   "descripcion": "Uso diario y laboral, bajo costo",
+   "criterio": "Posición erguida, rin 17-18, sin protección de viento, cc <= 125 y orientada a costo/consumo."
+  },
+  "scooter": {
+   "nombre": "Scooter",
+   "descripcion": "Transmisión automática CVT, plataforma para pies",
+   "criterio": "CVT + plataforma plana. Si es CVT pero de rueda alta sin plataforma, sigue siendo scooter."
+  },
+  "naked": {
+   "nombre": "Naked / street",
+   "descripcion": "Calle, sin carenado completo",
+   "criterio": "Sin carenado completo ni vocación off-road; incluye naked de 150 cc en adelante."
+  },
+  "doble-proposito": {
+   "nombre": "Doble propósito / enduro",
+   "descripcion": "Uso mixto calle y destapado",
+   "criterio": "Llanta delantera >= 19 o 21 pulgadas, suspensión de recorrido largo y < 300 cc."
+  },
+  "adventure": {
+   "nombre": "Trail / adventure",
+   "descripcion": "Viaje y destapado, >= 250 cc",
+   "criterio": "Vocación de viaje (parabrisas, tanque grande) y >= 250 cc. Doble propósito < 300 cc sin vocación de viaje va a doble-proposito."
+  },
+  "semiautomatica": {
+   "nombre": "Semiautomática",
+   "descripcion": "Embrague automático, cambios con pie",
+   "criterio": "Cambios secuenciales sin palanca de embrague."
+  }
+ },
+ "versiones": [
+  {
+   "slug": "ktm-390-adventure-x-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "390 Adventure",
+   "variante": "X",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "adventure",
+   "specs": {
+    "cilindrada": {
+     "crudo": "398.7 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 398.7
+    },
+    "potencia_max": {
+     "crudo": "45 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 44.38,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "39 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 39.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "176 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. También declara 'Peso (sin combustible)' 165 kg",
+     "valor": 176.0
+    },
+    "altura_sillin": {
+     "crudo": "825 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 825.0
+    },
+    "capacidad_tanque": {
+     "crudo": "14 l",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Capacidad del depósito (aprox.)'",
+     "valor": 14.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinzas flotantes axiales Bybre de 2 pistones'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante Bybre de 1 pistón', disco 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX open cartridge 43 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX open cartridge 43 mm"
+    },
+    "suspension_trasera": {
+     "crudo": "WP APEX Emulsion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX Emulsion"
+    },
+    "recorrido_delantero": {
+     "crudo": "200 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "La página del modelo dice 205 mm; la ficha técnica 200 mm",
+     "valor": 200.0
+    },
+    "distancia_piso": {
+     "crudo": "232 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 232.0
+    },
+    "distancia_ejes": {
+     "crudo": "1464 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1464.0
+    }
+   },
+   "precio": {
+    "valor_cop": 31990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-390-adventure-x-2027/p",
+    "notas": "No dice si es sugerido ni vigencia"
+   }
+  },
+  {
+   "slug": "hero-xpulse-200-4v-2027",
+   "marca": "hero",
+   "marca_nombre": "Hero",
+   "modelo": "Xpulse 200",
+   "variante": "4V",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "doble-proposito",
+   "specs": {
+    "cilindrada": {
+     "crudo": "199,6 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 199.6
+    },
+    "potencia_max": {
+     "crudo": "18,9 Hp @ 8000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 18.9,
+     "rpm": 8000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "17,35 Nm @ 6500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 17.35,
+     "rpm": 6500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aceite",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aceite"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "tablero": {
+     "crudo": "digital",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "digital"
+    },
+    "capacidad_tanque": {
+     "crudo": "3,4 Galones (13 Lt)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 13.0
+    },
+    "distancia_ejes": {
+     "crudo": "1410 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1410.0
+    },
+    "recorrido_delantero": {
+     "crudo": "190mm de recorrido de la rueda",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 190.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco, ABS' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Hidráulica telescópica de 37mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Hidráulica telescópica de 37mm"
+    },
+    "suspension_trasera": {
+     "crudo": "Monoshock de 10 posiciones ajustable",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Monoshock de 10 posiciones ajustable"
+    },
+    "llanta_delantera": {
+     "crudo": "90/90-21″ TT doble proposito",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90-21″ TT doble proposito"
+    },
+    "llanta_trasera": {
+     "crudo": "120/80-18″ TT doble proposito",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "120/80-18″ TT doble proposito"
+    },
+    "peso_sin_especificar": {
+     "crudo": "159 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "'Peso sin carga'; no se pudo abrir el manual",
+     "valor": 159.0
+    }
+   },
+   "precio": {
+    "valor_cop": 12390000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://heromotos.com.co/doble-proposito/xpulse-200-4v/",
+    "notas": "'Precio antes'. $11.490.000 con Progreser (la meta descripción dice $11.390.000)"
+   }
+  },
+  {
+   "slug": "honda-xr-190l-2-0-2027",
+   "marca": "honda",
+   "marca_nombre": "Honda",
+   "modelo": "XR 190L",
+   "variante": "2.0",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "doble-proposito",
+   "specs": {
+    "cilindrada": {
+     "crudo": "184 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Términos de Honda: uso de la información citando la fuente; carga manual. El texto de la misma página dice 184,43 cc",
+     "valor": 184.0
+    },
+    "potencia_max": {
+     "crudo": "15,6 Hp @ 8500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 15.6,
+     "rpm": 8500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "15,7 Nm @ 6000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 15.7,
+     "rpm": 6000,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Mecánica'",
+     "valor": "manual"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Euro 3"
+    },
+    "distancia_ejes": {
+     "crudo": "1.351 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1351.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'ABS unicanal'",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Monosuspensión PRO ARM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Monosuspensión PRO ARM"
+    },
+    "llanta_delantera": {
+     "crudo": "90 / 90-19",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90 / 90-19"
+    },
+    "llanta_trasera": {
+     "crudo": "110 / 90-17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110 / 90-17"
+    },
+    "peso_sin_especificar": {
+     "crudo": "133 Kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La marca no declara si es seco o en orden de marcha",
+     "valor": 133.0
+    }
+   },
+   "precio": {
+    "valor_cop": 13900000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": null,
+    "incluye_soat": null,
+    "fuente_url": "https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20",
+    "notas": "'Precio normal'. Desde $13.500.000 con descuento"
+   }
+  },
+  {
+   "slug": "suzuki-dr-150-abs-2027",
+   "marca": "suzuki",
+   "marca_nombre": "Suzuki",
+   "modelo": "DR 150",
+   "variante": "ABS",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "doble-proposito",
+   "specs": {
+    "cilindrada": {
+     "crudo": "149 cm3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 149.0
+    },
+    "potencia_max": {
+     "crudo": "11,8 HP @ 8000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 11.8,
+     "rpm": 8000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "11.6 Nm@ 6000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 11.6,
+     "rpm": 6000,
+     "unidad_original": "nm"
+    },
+    "alimentacion": {
+     "crudo": "carburador",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Carburada'",
+     "valor": "carburador"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Eléctrico y patada'",
+     "valor": "electrico+pedal"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Aparece bajo la etiqueta 'Sistema de válvulas'; error de maquetación de la página",
+     "valor": "Euro 3"
+    },
+    "distancia_ejes": {
+     "crudo": "1360 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1360.0
+    },
+    "distancia_piso": {
+     "crudo": "244 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 244.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco (ABS)' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "llanta_delantera": {
+     "crudo": "90/90-19",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90-19"
+    },
+    "llanta_trasera": {
+     "crudo": "110/90-17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/90-17"
+    },
+    "peso_sin_especificar": {
+     "crudo": "139 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "La web solo dice 'Peso'; el 'Peso en seco' del texto alternativo del ícono es genérico (aparece igual en la Gixxer, cuyo catálogo dice orden de marcha)",
+     "valor": 139.0
+    }
+   },
+   "precio": {
+    "valor_cop": 10990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs",
+    "notas": "'Precio normal'. Desde $10.590.000 con bono hasta el 30-nov-2026"
+   }
+  },
+  {
+   "slug": "vento-crossmax-200-pro-2027",
+   "marca": "vento",
+   "marca_nombre": "Vento",
+   "modelo": "Crossmax 200",
+   "variante": "PRO",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "doble-proposito",
+   "specs": {
+    "cilindrada": {
+     "crudo": "196.4 c.c.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 196.4
+    },
+    "potencia_max": {
+     "crudo": "16  HP a 7.000 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 16.0,
+     "rpm": 7000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "13 N.M a 5.500 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 13.0,
+     "rpm": 5500,
+     "unidad_original": "n.m"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "manual"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "capacidad_tanque": {
+     "crudo": "12 litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 12.0
+    },
+    "altura_sillin": {
+     "crudo": "85 cm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 850.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco Hidráulico ABS' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla Hidráulica Invertida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla Hidráulica Invertida"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono Suspensión",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono Suspensión"
+    },
+    "llanta_delantera": {
+     "crudo": "90/100 R21",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/100 R21"
+    },
+    "llanta_trasera": {
+     "crudo": "110/100 R18",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/100 R18"
+    },
+    "peso_sin_especificar": {
+     "crudo": "132 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La marca no declara si es seco o en orden de marcha",
+     "valor": 132.0
+    }
+   },
+   "precio": {
+    "valor_cop": 7990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://vento.com.co/crossmax-200-pro/",
+    "notas": "Válido hasta el 30 de noviembre de 2026"
+   }
+  },
+  {
+   "slug": "yamaha-xtz150-abs-2027",
+   "marca": "yamaha",
+   "marca_nombre": "Yamaha",
+   "modelo": "XTZ150",
+   "variante": "ABS",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "doble-proposito",
+   "specs": {
+    "cilindrada": {
+     "crudo": "149 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 149.0
+    },
+    "potencia_max": {
+     "crudo": "12.3 Hp a 7500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 12.3,
+     "rpm": 7500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "13.1 Nm a 6000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 13.1,
+     "rpm": 6000,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "136 Kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'con aceite y tanque de gasolina lleno'",
+     "valor": 136.0
+    },
+    "capacidad_tanque": {
+     "crudo": "11L",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 11.0
+    },
+    "altura_sillin": {
+     "crudo": "855mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 855.0
+    },
+    "distancia_ejes": {
+     "crudo": "1350 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1350.0
+    },
+    "distancia_piso": {
+     "crudo": "235 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 235.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco (ABS)' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Basculante (Por bieletas)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Basculante (Por bieletas)"
+    },
+    "llanta_delantera": {
+     "crudo": "90/90-19 M/C(52P) Tube type",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90-19 M/C(52P) Tube type"
+    },
+    "llanta_trasera": {
+     "crudo": "110/90-17M/C 60P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/90-17M/C 60P"
+    }
+   },
+   "precio": {
+    "valor_cop": 14500000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/xtz150-abs/9869/",
+    "notas": "IVA incluido; sin fecha de vigencia publicada"
+   }
+  },
+  {
+   "slug": "hero-hunk-160r-4v-2027",
+   "marca": "hero",
+   "marca_nombre": "Hero",
+   "modelo": "Hunk 160R",
+   "variante": "4V",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "163,24 CC.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 163.24
+    },
+    "potencia_max": {
+     "crudo": "16,6 hp @8500 rpm.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 16.6,
+     "rpm": 8500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "14,6 Nm @6500 rpm.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 14.6,
+     "rpm": 6500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aceite",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aceite"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "capacidad_tanque": {
+     "crudo": "12 Litros.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 12.0
+    },
+    "altura_sillin": {
+     "crudo": "795 mm.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 795.0
+    },
+    "distancia_ejes": {
+     "crudo": "1329 mm.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1329.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "276 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 276.0
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'ABS monocanal'",
+     "valor": "1 canal"
+    },
+    "iluminacion_led": {
+     "crudo": "completa",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "completa"
+    },
+    "tablero": {
+     "crudo": "digital",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Panel de instrumentos LCD'",
+     "valor": "digital"
+    },
+    "conectividad": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Bluetooth",
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Hidráulica telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Hidráulica telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Monoamortiguador ajustable en 7 posiciones",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Monoamortiguador ajustable en 7 posiciones"
+    },
+    "llanta_delantera": {
+     "crudo": "100/80/17″",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "100/80/17″"
+    },
+    "llanta_trasera": {
+     "crudo": "130/70/17″",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "130/70/17″"
+    },
+    "peso_sin_especificar": {
+     "crudo": "146 Kg.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "'Peso sin carga'; el manual y el catálogo dan el mismo valor sin definir el tipo",
+     "valor": 146.0
+    }
+   },
+   "precio": {
+    "valor_cop": 10990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://heromotos.com.co/urbanas/hunk-160r-4v/",
+    "notas": "'Precio antes'. Desde $10.190.000 con bono"
+   }
+  },
+  {
+   "slug": "honda-cb-190r-2-0-2027",
+   "marca": "honda",
+   "marca_nombre": "Honda",
+   "modelo": "CB 190R",
+   "variante": "2.0",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "184.4 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Términos de Honda: uso de la información citando la fuente; carga manual",
+     "valor": 184.4
+    },
+    "potencia_max": {
+     "crudo": "16,4 HP / 8.500 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 16.4,
+     "rpm": 8500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "15,5 Nm / 6.000 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 15.5,
+     "rpm": 6000,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Euro 3"
+    },
+    "distancia_ejes": {
+     "crudo": "1.355 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1355.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "2 canales",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco - ABS' en ambos frenos; canales inferidos",
+     "valor": "2 canales"
+    },
+    "suspension_delantera": {
+     "crudo": "Telescópica invertida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Telescópica invertida"
+    },
+    "suspension_trasera": {
+     "crudo": "Monoamortiguada",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Monoamortiguada"
+    },
+    "llanta_delantera": {
+     "crudo": "110/70 - R 17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/70 - R 17"
+    },
+    "llanta_trasera": {
+     "crudo": "140/70 - R 17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "140/70 - R 17"
+    },
+    "peso_sin_especificar": {
+     "crudo": "141 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual: 'Peso neto de la motocicleta 141 kg'; Honda no define 'neto'",
+     "valor": 141.0
+    },
+    "capacidad_tanque": {
+     "crudo": "12,0 L",
+     "fuente_tipo": "manual_usuario",
+     "fuente_url": "https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/nueva-CB190R.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual del propietario (2019)",
+     "valor": 12.0
+    }
+   },
+   "precio": {
+    "valor_cop": 12590000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": null,
+    "incluye_soat": null,
+    "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
+    "notas": "'Precio normal'. Desde $12.190.000 con descuento"
+   }
+  },
+  {
+   "slug": "ktm-200-duke-2026",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "200 Duke",
+   "variante": null,
+   "anio_modelo": 2026,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "199.5 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 199.5
+    },
+    "potencia_max": {
+     "crudo": "25 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 24.66,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "19.5 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 19.5,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Monocilíndrico'",
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Motor monocilíndrico de 4 tiempos'",
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Refrigeración líquida'",
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: '6 marchas'",
+     "valor": 6.0
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Inferido de caja de 6 marchas con embrague; la ficha no lo rotula",
+     "valor": "manual"
+    },
+    "peso_sin_especificar": {
+     "crudo": "140 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Peso (sin combustible)'. No es seco ni orden de marcha",
+     "valor": 140.0
+    },
+    "altura_sillin": {
+     "crudo": "815 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 815.0
+    },
+    "capacidad_tanque": {
+     "crudo": "13.5 l",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Capacidad del depósito (aprox.)'",
+     "valor": 13.5
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza radial de 2 pistones, disco de freno'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante de 1 pistón, disco de freno'",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX-USD Ø 37 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX-USD Ø 37 mm"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono shock",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono shock"
+    },
+    "distancia_piso": {
+     "crudo": "174 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Altura libre al suelo'",
+     "valor": 174.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": {
+    "valor_cop": 19990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-200-duke-2027/p",
+    "notas": "Autocolombiana lo lista como 'KTM 200 DUKE 2027'; la ficha de ktm.com es 2026. No dice si es sugerido ni vigencia"
+   }
+  },
+  {
+   "slug": "ktm-250-duke-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "250 Duke",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "249.07 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 249.07
+    },
+    "potencia_max": {
+     "crudo": "31 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 30.58,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "25 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 25.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Monocilíndrico'",
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "165 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. Se asimila a orden de marcha; no menciona aceite",
+     "valor": 165.0
+    },
+    "altura_sillin": {
+     "crudo": "800 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 800.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Solo 'Diámetro del disco de freno delantero'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante de un pistón', disco 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX 43",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX 43"
+    },
+    "recorrido_delantero": {
+     "crudo": "150 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 150.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": {
+    "valor_cop": 24490000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-250-duke-2027/p",
+    "notas": "No dice si es sugerido ni vigencia"
+   }
+  },
+  {
+   "slug": "ktm-390-duke-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "390 Duke",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "398.7 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 398.7
+    },
+    "potencia_max": {
+     "crudo": "45 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 44.38,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "39 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 39.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "165 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. Mismo valor que la 250 Duke; posible error de la página",
+     "valor": 165.0
+    },
+    "altura_sillin": {
+     "crudo": "800 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: '820/800 mm' (dos posiciones); se toma la baja",
+     "valor": 800.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza de cuatro pistones con anclaje radial'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Solo disco de 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX 43",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX 43"
+    },
+    "recorrido_delantero": {
+     "crudo": "150 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 150.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": null
+  },
+  {
+   "slug": "suzuki-gixxer-fi-150-abs-2027",
+   "marca": "suzuki",
+   "marca_nombre": "Suzuki",
+   "modelo": "Gixxer FI 150",
+   "variante": "ABS",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "155 cm3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 155.0
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "capacidad_tanque": {
+     "crudo": "12 L / 3.17 Gal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 12.0
+    },
+    "altura_sillin": {
+     "crudo": "795 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 795.0
+    },
+    "distancia_ejes": {
+     "crudo": "1335 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1335.0
+    },
+    "distancia_piso": {
+     "crudo": "160 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 160.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco ABS' solo en el freno delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Telescopica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Telescopica"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono Amortiguado Ajustable en 7 posiciones",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono Amortiguado Ajustable en 7 posiciones"
+    },
+    "llanta_delantera": {
+     "crudo": "100/80 R 17 M/C",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "100/80 R 17 M/C"
+    },
+    "llanta_trasera": {
+     "crudo": "140/60 R 17 M/C",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "140/60 R 17 M/C"
+    },
+    "peso_orden_marcha": {
+     "crudo": "138 Kg",
+     "fuente_tipo": "pdf_marca",
+     "fuente_url": "https://www.suzuki.com.co/sites/default/files/2026-09/CATALOGO%20SUZUKI%20GIXXER%20150%20FI%20ABS%20%20-%20VIG%201%20SEP%20-%2030%20NOV%202026.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Catálogo PDF: 'Peso en orden de marcha'; la web dice solo 'Peso'",
+     "valor": 138.0
+    }
+   },
+   "precio": {
+    "valor_cop": 11390000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs",
+    "notas": "'Precio normal'. Desde $10.890.000 con bono; SOAT gratis en noviembre 2026"
+   }
+  },
+  {
+   "slug": "vento-screamer-sportivo-250-efi-2027",
+   "marca": "vento",
+   "marca_nombre": "Vento",
+   "modelo": "Screamer Sportivo 250",
+   "variante": "EFI",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "223 c.c.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "El nombre comercial dice 250",
+     "valor": 223.0
+    },
+    "potencia_max": {
+     "crudo": "20 HP",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Sin rpm publicadas",
+     "valor": 20.0,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "16 N.M./6500 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 16.0,
+     "rpm": 6500,
+     "unidad_original": "n.m"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aceite",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aceite"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Inferido de 'EFI' en el nombre",
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "manual"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "capacidad_tanque": {
+     "crudo": "20 litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 20.0
+    },
+    "altura_sillin": {
+     "crudo": "80 cm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 800.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco Hidráulico ABS' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla hidráulica invertida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla hidráulica invertida"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono Suspensión",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono Suspensión"
+    },
+    "llanta_delantera": {
+     "crudo": "100/80 R17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "100/80 R17"
+    },
+    "llanta_trasera": {
+     "crudo": "130/80 R17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "130/80 R17"
+    },
+    "peso_sin_especificar": {
+     "crudo": "135 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La marca no declara si es seco o en orden de marcha",
+     "valor": 135.0
+    }
+   },
+   "precio": {
+    "valor_cop": 8990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://vento.com.co/screamer-sportivo-250/",
+    "notas": "Válido hasta el 30 de noviembre de 2026"
+   }
+  },
+  {
+   "slug": "yamaha-fz-3-0-2027",
+   "marca": "yamaha",
+   "marca_nombre": "Yamaha",
+   "modelo": "FZ 3.0",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "149 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 149.0
+    },
+    "potencia_max": {
+     "crudo": "12.20 HP a 7250 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Marcada con * en la página, sin nota al pie visible",
+     "valor": 12.2,
+     "rpm": 7250,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "13.3 Nm a 5500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 13.3,
+     "rpm": 5500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "marchas": {
+     "crudo": "5",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "136 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'con aceite y tanque de gasolina lleno'",
+     "valor": 136.0
+    },
+    "capacidad_tanque": {
+     "crudo": "13L (Aprox 3.43 gal)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 13.0
+    },
+    "altura_sillin": {
+     "crudo": "790mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 790.0
+    },
+    "distancia_ejes": {
+     "crudo": "1330mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1330.0
+    },
+    "distancia_piso": {
+     "crudo": "165mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 165.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco (ABS)' solo delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Basculante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Basculante"
+    },
+    "llanta_delantera": {
+     "crudo": "100/80-17M/C 52P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "100/80-17M/C 52P"
+    },
+    "llanta_trasera": {
+     "crudo": "140/60R-17M/C 63P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "140/60R-17M/C 63P"
+    }
+   },
+   "precio": {
+    "valor_cop": 11800000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/fz15v3/25294/",
+    "notas": "IVA incluido; sin fecha de vigencia publicada"
+   }
+  },
+  {
+   "slug": "hero-xoom-125-2027",
+   "marca": "hero",
+   "marca_nombre": "Hero",
+   "modelo": "Xoom 125",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "scooter",
+   "specs": {
+    "cilindrada": {
+     "crudo": "124.6 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 124.6
+    },
+    "potencia_max": {
+     "crudo": "9,8 HP @ 7250 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.8,
+     "rpm": 7250,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "10.4 Nm @ 6000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 10.4,
+     "rpm": 6000,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "cvt",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Automática'",
+     "valor": "cvt"
+    },
+    "capacidad_tanque": {
+     "crudo": "5 litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.0
+    },
+    "altura_sillin": {
+     "crudo": "777 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 777.0
+    },
+    "distancia_ejes": {
+     "crudo": "1327 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1327.0
+    },
+    "iluminacion_led": {
+     "crudo": "completa",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Luz delantera y trasera LED",
+     "valor": "completa"
+    },
+    "suspension_delantera": {
+     "crudo": "Hidráulica telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Hidráulica telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Amortiguador hidráulico sobre basculante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Amortiguador hidráulico sobre basculante"
+    },
+    "llanta_delantera": {
+     "crudo": "110/80-14 53P (Tubeless/ Sin Cámara)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/80-14 53P (Tubeless/ Sin Cámara)"
+    },
+    "llanta_trasera": {
+     "crudo": "120/70-14 55P (Tubeless/ Sin Cámara)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "120/70-14 55P (Tubeless/ Sin Cámara)"
+    },
+    "peso_sin_especificar": {
+     "crudo": "121 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/scooter/xoom-125/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "'Peso sin carga'; no se pudo abrir el manual",
+     "valor": 121.0
+    }
+   },
+   "precio": null
+  },
+  {
+   "slug": "honda-dio-led-std-2027",
+   "marca": "honda",
+   "marca_nombre": "Honda",
+   "modelo": "DIO LED",
+   "variante": "STD",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "scooter",
+   "specs": {
+    "cilindrada": {
+     "crudo": "109,2 c.c.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Términos de Honda: uso de la información citando la fuente; carga manual",
+     "valor": 109.2
+    },
+    "potencia_max": {
+     "crudo": "7,9 Hp @ 7500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 7.9,
+     "rpm": 7500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "8,9 Nm @ 5000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.9,
+     "rpm": 5000,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "transmision_tipo": {
+     "crudo": "cvt",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Automatica V-Matic'",
+     "valor": "cvt"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'EURO III'",
+     "valor": "Euro 3"
+    },
+    "distancia_ejes": {
+     "crudo": "1.238 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1238.0
+    },
+    "freno_delantero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Tambor 130 mm – Combinado'",
+     "valor": "tambor"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Doble brazo articulado",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Doble brazo articulado"
+    },
+    "suspension_trasera": {
+     "crudo": "Brazo Oscilante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Brazo Oscilante"
+    },
+    "llanta_delantera": {
+     "crudo": "90/100 – 10",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/100 – 10"
+    },
+    "llanta_trasera": {
+     "crudo": "90/100 – 10",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/100 – 10"
+    },
+    "peso_sin_especificar": {
+     "crudo": "Neto 104 Kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Web: 'Peso: Neto 104 Kg'. 'Neto' no es seco: el manual da 99 kg en seco",
+     "valor": 104.0
+    },
+    "peso_seco": {
+     "crudo": "99 kg",
+     "fuente_tipo": "manual_usuario",
+     "fuente_url": "https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-dio-std.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual del propietario (2017), puede corresponder a una versión anterior",
+     "valor": 99.0
+    },
+    "capacidad_tanque": {
+     "crudo": "5.3 Lts.",
+     "fuente_tipo": "manual_usuario",
+     "fuente_url": "https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-dio-std.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual del propietario (2017); incluye reserva",
+     "valor": 5.3
+    }
+   },
+   "precio": {
+    "valor_cop": 7390000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": null,
+    "incluye_soat": null,
+    "fuente_url": "https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD",
+    "notas": "'Precio normal'. Desde $7.090.000 con descuento. 'Precios informativos sujeto a actualizaciones'"
+   }
+  },
+  {
+   "slug": "suzuki-address-nm-2027",
+   "marca": "suzuki",
+   "marca_nombre": "Suzuki",
+   "modelo": "Address NM",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "scooter",
+   "specs": {
+    "cilindrada": {
+     "crudo": "113 cm3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 113.0
+    },
+    "potencia_max": {
+     "crudo": "9,25 HP a 8000 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.25,
+     "rpm": 8000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "8,55 NM a 6250 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.55,
+     "rpm": 6250,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Eléctrico y Pedal'",
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "cvt",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "cvt"
+    },
+    "capacidad_tanque": {
+     "crudo": "5.2L",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 5.2
+    },
+    "altura_sillin": {
+     "crudo": "755 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 755.0
+    },
+    "distancia_ejes": {
+     "crudo": "1260 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1260.0
+    },
+    "distancia_piso": {
+     "crudo": "120 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 120.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Tambor Combinado'",
+     "valor": true
+    },
+    "abs": {
+     "crudo": "ninguno",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Sin abs'",
+     "valor": "ninguno"
+    },
+    "suspension_delantera": {
+     "crudo": "Telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono Amortiguado sin graduación",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono Amortiguado sin graduación"
+    },
+    "llanta_delantera": {
+     "crudo": "80/90 R14 M/C 40P TUBELESS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "80/90 R14 M/C 40P TUBELESS"
+    },
+    "llanta_trasera": {
+     "crudo": "90/90 R14 M/C 46P TUBELESS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90 R14 M/C 46P TUBELESS"
+    },
+    "peso_seco": {
+     "crudo": "96 Kg",
+     "fuente_tipo": "pdf_marca",
+     "fuente_url": "https://www.suzuki.com.co/sites/default/files/2026-09/CATALOGO%20SUZUKI%20ADRESS%20NM%20-%20VIG%201%20ENE%20-%2031%20MAR%202026.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Catálogo PDF: 'Peso en seco'",
+     "valor": 96.0
+    }
+   },
+   "precio": {
+    "valor_cop": 7990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.suzuki.com.co/motocicletas/automaticas/address-nm",
+    "notas": "Válido del 1 al 30 de noviembre de 2026"
+   }
+  },
+  {
+   "slug": "vento-ovni-125-2027",
+   "marca": "vento",
+   "marca_nombre": "Vento",
+   "modelo": "Ovni 125",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "scooter",
+   "specs": {
+    "cilindrada": {
+     "crudo": "125.1 c.c.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 125.1
+    },
+    "potencia_max": {
+     "crudo": "8.1 HP 7500 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.1,
+     "rpm": 7500,
+     "unidad_original": "hp"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'aire forzado'",
+     "valor": "aire"
+    },
+    "transmision_tipo": {
+     "crudo": "cvt",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "cvt"
+    },
+    "capacidad_tanque": {
+     "crudo": "4.5 litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 4.5
+    },
+    "altura_sillin": {
+     "crudo": "76 cm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 760.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": true
+    },
+    "consumo_declarado": {
+     "crudo": "35 km/l",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "Rendimiento declarado por la marca; sin protocolo",
+     "valor": 132.5
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla Hidráulica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla Hidráulica"
+    },
+    "suspension_trasera": {
+     "crudo": "Amortiguador con Resorte",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Amortiguador con Resorte"
+    },
+    "llanta_delantera": {
+     "crudo": "90/90 R12",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90 R12"
+    },
+    "llanta_trasera": {
+     "crudo": "3.50 R10",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "3.50 R10"
+    },
+    "peso_sin_especificar": {
+     "crudo": "95 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/ovni-125/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La marca no declara si es seco o en orden de marcha",
+     "valor": 95.0
+    }
+   },
+   "precio": {
+    "valor_cop": 4990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://vento.com.co/ovni-125/",
+    "notas": "Válido hasta el 30 de noviembre de 2026"
+   }
+  },
+  {
+   "slug": "yamaha-nmax-155-2027",
+   "marca": "yamaha",
+   "marca_nombre": "Yamaha",
+   "modelo": "NMAX 155",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "scooter",
+   "specs": {
+    "cilindrada": {
+     "crudo": "155 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 155.0
+    },
+    "potencia_max": {
+     "crudo": "15.15 HP a 8000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 15.15,
+     "rpm": 8000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "14.2 Nm @ 6500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 14.2,
+     "rpm": 6500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "transmision_tipo": {
+     "crudo": "cvt",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "cvt"
+    },
+    "peso_orden_marcha": {
+     "crudo": "131kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'con aceite y tanque de gasolina lleno'",
+     "valor": 131.0
+    },
+    "capacidad_tanque": {
+     "crudo": "7.1L",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 7.1
+    },
+    "altura_sillin": {
+     "crudo": "770mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 770.0
+    },
+    "distancia_ejes": {
+     "crudo": "1340mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1340.0
+    },
+    "distancia_piso": {
+     "crudo": "125mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 125.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "abs": {
+     "crudo": "2 canales",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco (ABS)' en ambos frenos; canales inferidos",
+     "valor": "2 canales"
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Unidad oscilante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Unidad oscilante"
+    },
+    "llanta_delantera": {
+     "crudo": "110/70-13M/C 48P Tubeless",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "110/70-13M/C 48P Tubeless"
+    },
+    "llanta_trasera": {
+     "crudo": "130/70-13M/C 63P Tubeless",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "130/70-13M/C 63P Tubeless"
+    }
+   },
+   "precio": {
+    "valor_cop": 16800000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/gpd155a/15956/",
+    "notas": "IVA incluido; sin fecha de vigencia publicada"
+   }
+  },
+  {
+   "slug": "suzuki-viva-fi-abs-2027",
+   "marca": "suzuki",
+   "marca_nombre": "Suzuki",
+   "modelo": "Viva FI",
+   "variante": "ABS",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "semiautomatica",
+   "specs": {
+    "cilindrada": {
+     "crudo": "113 cm3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 113.0
+    },
+    "potencia_max": {
+     "crudo": "9,12 HP @ 7500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.12,
+     "rpm": 7500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "9.0 Nm @ 6500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.0,
+     "rpm": 6500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: '4 tiempos 1 cilindro'",
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Inyección electrónica'",
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico"
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Euro 3"
+    },
+    "marchas": {
+     "crudo": "4",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: '4 velocidades - manual'",
+     "valor": 4.0
+    },
+    "capacidad_tanque": {
+     "crudo": "3,9 Litro",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 3.9
+    },
+    "distancia_ejes": {
+     "crudo": "1220 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1220.0
+    },
+    "distancia_piso": {
+     "crudo": "150 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 150.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "abs": {
+     "crudo": "1 canal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Disco (ABS)' solo en el freno delantero; canales inferidos",
+     "valor": "1 canal"
+    },
+    "llanta_delantera": {
+     "crudo": "70/90-17M/C 38P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "70/90-17M/C 38P"
+    },
+    "llanta_trasera": {
+     "crudo": "80/90-17M/C 50P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "80/90-17M/C 50P"
+    },
+    "peso_sin_especificar": {
+     "crudo": "96 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "La web solo dice 'Peso'; el 'Peso en seco' del texto alternativo del ícono es genérico (aparece igual en la Gixxer, cuyo catálogo dice orden de marcha)",
+     "valor": 96.0
+    }
+   },
+   "precio": {
+    "valor_cop": 9999500,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs",
+    "notas": "'Precio normal' (otros medios de pago). Desde $9.099.500 con bono hasta el 30-nov-2026"
+   }
+  },
+  {
+   "slug": "vento-rapid-125-2027",
+   "marca": "vento",
+   "marca_nombre": "Vento",
+   "modelo": "Rapid 125",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "semiautomatica",
+   "specs": {
+    "cilindrada": {
+     "crudo": "120 c.c.",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "El nombre comercial dice 125",
+     "valor": 120.0
+    },
+    "potencia_max": {
+     "crudo": "10 HP",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Sin rpm publicadas",
+     "valor": 10.0,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "6.9 N.M./6000 RPM",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.9,
+     "rpm": 6000,
+     "unidad_original": "n.m"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "semiautomatica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "semiautomatica"
+    },
+    "marchas": {
+     "crudo": "4",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 4.0
+    },
+    "capacidad_tanque": {
+     "crudo": "3.5 litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 3.5
+    },
+    "altura_sillin": {
+     "crudo": "79 cm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 790.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla Hidráulica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla Hidráulica"
+    },
+    "suspension_trasera": {
+     "crudo": "Doble Amortiguador",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Doble Amortiguador"
+    },
+    "llanta_delantera": {
+     "crudo": "2.5 R17",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "2.5 R17"
+    },
+    "llanta_trasera": {
+     "crudo": "3.0 R16",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "3.0 R16"
+    },
+    "peso_sin_especificar": {
+     "crudo": "97 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://vento.com.co/rapid-125/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La marca no declara si es seco o en orden de marcha",
+     "valor": 97.0
+    }
+   },
+   "precio": {
+    "valor_cop": 4490000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://vento.com.co/rapid-125/",
+    "notas": "Válido hasta el 30 de noviembre de 2026"
+   }
+  },
+  {
+   "slug": "yamaha-crypton-finn-2027",
+   "marca": "yamaha",
+   "marca_nombre": "Yamaha",
+   "modelo": "Crypton FINN",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "semiautomatica",
+   "specs": {
+    "cilindrada": {
+     "crudo": "114 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 114.0
+    },
+    "potencia_max": {
+     "crudo": "8.85 Hp a 7000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.85,
+     "rpm": 7000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "9.2 Nm a 5500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.2,
+     "rpm": 5500,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "alimentacion": {
+     "crudo": "inyeccion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Fuel injection'",
+     "valor": "inyeccion"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "marchas": {
+     "crudo": "4",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 4.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "100 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'con aceite y tanque de gasolina lleno'",
+     "valor": 100.0
+    },
+    "capacidad_tanque": {
+     "crudo": "3.9L (Aprox 1.05 gal)",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 3.9
+    },
+    "altura_sillin": {
+     "crudo": "775 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 775.0
+    },
+    "distancia_ejes": {
+     "crudo": "1235 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1235.0
+    },
+    "distancia_piso": {
+     "crudo": "155 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 155.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'Tambor (UBS)', frenado unificado de Yamaha",
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Basculante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Basculante"
+    },
+    "llanta_delantera": {
+     "crudo": "70/90-17 M/C 38P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "70/90-17 M/C 38P"
+    },
+    "llanta_trasera": {
+     "crudo": "80/90-17 M/C 44P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "80/90-17 M/C 44P"
+    }
+   },
+   "precio": {
+    "valor_cop": 9100000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/",
+    "notas": "IVA incluido; sin fecha de vigencia publicada"
+   }
+  },
+  {
+   "slug": "hero-eco-deluxe-2027",
+   "marca": "hero",
+   "marca_nombre": "Hero",
+   "modelo": "Eco Deluxe",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "trabajo",
+   "specs": {
+    "cilindrada": {
+     "crudo": "97.2 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 97.2
+    },
+    "potencia_max": {
+     "crudo": "8.2 Hp @ 8000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.2,
+     "rpm": 8000,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "8.05 Nm @ 5000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.05,
+     "rpm": 5000,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "manual"
+    },
+    "marchas": {
+     "crudo": "4",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Mecánica de 4 velocidades'",
+     "valor": 4.0
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Página: 'IBS Integrado'; tipo de freno no publicado",
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Hidráulica telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Hidráulica telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Doble amortiguador ajustable en 5 pasos",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Doble amortiguador ajustable en 5 pasos"
+    },
+    "llanta_delantera": {
+     "crudo": "2.75 18-4 PR/42P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "2.75 18-4 PR/42P"
+    },
+    "llanta_trasera": {
+     "crudo": "2.75 18-6 PR/48P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "2.75 18-6 PR/48P"
+    },
+    "peso_sin_especificar": {
+     "crudo": "110 Kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "'Peso sin carga'; el manual da 110 kg con arranque eléctrico y 107 kg con patada",
+     "valor": 110.0
+    },
+    "capacidad_tanque": {
+     "crudo": "10.5 Litros",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+     "fecha": "2026-11-13",
+     "confianza": "baja",
+     "notas": "La web dice 10,5 L; el manual dice 9,5 L incluyendo reserva",
+     "valor": 10.5
+    },
+    "altura_sillin": {
+     "crudo": "805 mm",
+     "fuente_tipo": "manual_usuario",
+     "fuente_url": "https://heromotos.com.co/wp-content/uploads/2023/09/Manual-Eco-Deluxe.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual del usuario",
+     "valor": 805.0
+    }
+   },
+   "precio": {
+    "valor_cop": 5990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://heromotos.com.co/trabajo/eco-deluxe/",
+    "notas": "'Precio antes'. $4.990.000 financiando con Progreser"
+   }
+  },
+  {
+   "slug": "honda-cb-125f-std-2027",
+   "marca": "honda",
+   "marca_nombre": "Honda",
+   "modelo": "CB 125F",
+   "variante": "STD",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "trabajo",
+   "specs": {
+    "cilindrada": {
+     "crudo": "124.7 cc",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Términos de Honda: uso de la información citando la fuente; carga manual",
+     "valor": 124.7
+    },
+    "potencia_max": {
+     "crudo": "8,41 HP @ 7.500 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 8.41,
+     "rpm": 7500,
+     "unidad_original": "hp"
+    },
+    "torque_max": {
+     "crudo": "9,65 Nm @ 5.000 rpm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 9.65,
+     "rpm": 5000,
+     "unidad_original": "nm"
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "aire",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "aire"
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Mecánica'; número de marchas no publicado",
+     "valor": "manual"
+    },
+    "arranque": {
+     "crudo": "electrico+pedal",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "electrico+pedal"
+    },
+    "norma_emisiones": {
+     "crudo": "Euro 3",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Euro 3"
+    },
+    "distancia_ejes": {
+     "crudo": "1.310 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1310.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Página: 'Disco CBS'",
+     "valor": "disco"
+    },
+    "freno_trasero": {
+     "crudo": "tambor",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "tambor"
+    },
+    "cbs": {
+     "crudo": "si",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": true
+    },
+    "suspension_delantera": {
+     "crudo": "Horquilla Telescópica",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Horquilla Telescópica"
+    },
+    "suspension_trasera": {
+     "crudo": "Brazo Oscilante",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Brazo Oscilante"
+    },
+    "llanta_delantera": {
+     "crudo": "80/100 - 18 M 47 P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "80/100 - 18 M 47 P"
+    },
+    "llanta_trasera": {
+     "crudo": "90/90 - 18 M 51 P",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "90/90 - 18 M 51 P"
+    },
+    "peso_sin_especificar": {
+     "crudo": "117 Kilogramos",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual: 'Peso neto del vehículo 117 kg'; Honda no define 'neto'",
+     "valor": 117.0
+    },
+    "capacidad_tanque": {
+     "crudo": "10,1 L",
+     "fuente_tipo": "manual_usuario",
+     "fuente_url": "https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-cb125f.pdf",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Manual del propietario (2018)",
+     "valor": 10.1
+    }
+   },
+   "precio": {
+    "valor_cop": 6890000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": null,
+    "incluye_soat": null,
+    "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20",
+    "notas": "'Precio normal'. Desde $6.339.000 con descuento"
+   }
+  }
+ ]
+}

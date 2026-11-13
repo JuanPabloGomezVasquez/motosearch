@@ -1,0 +1,63 @@
+---
+import { CATALOGO, nombreVersion, url } from "../lib/datos";
+const nombres = Object.fromEntries(CATALOGO.versiones.map((v) => [v.slug, nombreVersion(v)]));
+---
+<div class="barra-comparar" hidden data-nombres={JSON.stringify(nombres)} data-base={url("/comparar/")}>
+  <div class="contenedor fila">
+    <div class="sel" aria-live="polite"></div>
+    <div class="acciones">
+      <button type="button" class="boton secundario limpiar">Quitar todas</button>
+      <a class="boton ir" href="#">Comparar</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .barra-comparar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    background: var(--surface); border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 16px rgb(0 0 0 / 0.08); padding: 0.6rem 0;
+  }
+  .fila { display: flex; gap: 0.75rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .sel { display: flex; gap: 0.4rem; flex-wrap: wrap; font-size: 0.875rem; }
+  .acciones { display: flex; gap: 0.5rem; }
+  :global(.sel .item) {
+    background: var(--surface-2); border-radius: 999px; padding: 0.2rem 0.65rem;
+    display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  :global(.sel .sw) { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+</style>
+
+<script>
+  import { MAX, guardar, leer } from "../lib/seleccion";
+
+  const raiz = document.querySelector<HTMLElement>(".barra-comparar")!;
+  const nombres: Record<string, string> = JSON.parse(raiz.dataset.nombres!);
+  const sel = raiz.querySelector<HTMLElement>(".sel")!;
+  const ir = raiz.querySelector<HTMLAnchorElement>(".ir")!;
+
+  function pintar() {
+    const s = leer().filter((x) => nombres[x]);
+    raiz.hidden = s.length === 0;
+    sel.replaceChildren(
+      ...s.map((slug, i) => {
+        const el = document.createElement("span");
+        el.className = "item";
+        el.innerHTML = `<span class="sw" style="background:var(--series-${i + 1})"></span>`;
+        el.append(nombres[slug]);
+        return el;
+      }),
+    );
+    if (s.length < MAX) {
+      const t = document.createElement("span");
+      t.className = "tenue";
+      t.textContent = s.length === 1 ? "Elige al menos otra" : `Puedes añadir ${MAX - s.length} más`;
+      sel.append(t);
+    }
+    ir.href = `${raiz.dataset.base}?v=${s.join(",")}`;
+    ir.setAttribute("aria-disabled", String(s.length < 2));
+  }
+  raiz.querySelector(".limpiar")!.addEventListener("click", () => guardar([]));
+  document.addEventListener("seleccion", pintar);
+  pintar();
+</script>

@@ -1,0 +1,211 @@
+---
+import Base from "../layouts/Base.astro";
+import { CATALOGO, nombreVersion } from "../lib/datos";
+
+const porSegmento = Object.entries(CATALOGO.segmentos).map(([slug, s]) => ({
+  nombre: s.nombre,
+  versiones: CATALOGO.versiones.filter((v) => v.segmento === slug),
+}));
+---
+<Base titulo="Comparar" seccion="comparar">
+  <h1>Comparar motos</h1>
+
+  <section class="panel elegir" aria-label="Elegir motos">
+    <div class="selectores">
+      {[1, 2, 3].map((i) => (
+        <label>
+          <span class="sw" style={`background:var(--series-${i})`}></span>
+          <span class="visualmente-oculto">Moto {i}</span>
+          <select data-pos={i - 1}>
+            <option value="">{i === 3 ? "Tercera moto (opcional)" : `Elige la moto ${i}`}</option>
+            {porSegmento.map((g) => (
+              <optgroup label={g.nombre}>
+                {g.versiones.map((v) => <option value={v.slug}>{nombreVersion(v)}</option>)}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      ))}
+    </div>
+  </section>
+
+  <div id="resultado"></div>
+</Base>
+
+<style>
+  .elegir { margin: 1rem 0 1.25rem; }
+  .selectores { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .selectores label { display: flex; align-items: center; gap: 0.5rem; }
+  .selectores select { flex: 1; min-width: 0; }
+  .sw { width: 12px; height: 12px; border-radius: 3px; flex: none; display: inline-block; }
+
+  :global(#resultado .avisos) { display: grid; gap: 0.6rem; margin-bottom: 1.25rem; }
+  :global(#resultado h2) { margin-top: 1.75rem; }
+  :global(.graficas) { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  :global(.grafica h3) { margin-bottom: 0.15rem; }
+  :global(.grafica .nota) { margin: 0.5rem 0 0; font-size: 0.78rem; color: var(--text-3); }
+  :global(.grafica.no-publicable) { background: var(--surface-2); }
+  :global(.fila-barra) { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.15rem; margin-top: 0.6rem; position: relative; }
+  :global(.fila-barra .nom) { font-size: 0.8rem; color: var(--text-2); display: flex; justify-content: space-between; gap: 0.5rem; }
+  :global(.fila-barra .nom b) { color: var(--text); font-weight: 600; white-space: nowrap; }
+  :global(.pista) { height: 14px; border-radius: 0 4px 4px 0; position: relative; }
+  :global(.relleno) { height: 100%; border-radius: 0 4px 4px 0; min-width: 2px; }
+  :global(.relleno.incierto) {
+    background-image: repeating-linear-gradient(135deg, transparent 0 4px, rgb(255 255 255 / 0.45) 4px 6px);
+  }
+  :global(.sin-barra) { font-size: 0.8rem; color: var(--text-3); font-style: italic; }
+  :global(.tooltip) {
+    position: absolute; z-index: 5; left: 0; right: 0; top: 100%; margin-top: 4px;
+    background: var(--text); color: var(--bg); font-size: 0.78rem; padding: 0.45rem 0.6rem; border-radius: 6px;
+    pointer-events: none;
+  }
+  :global(.fila-barra:not(:hover):not(:focus-within) .tooltip) { display: none; }
+  :global(.fila-barra[tabindex]) { outline-offset: 3px; }
+
+  :global(.tabla-wrap) { overflow-x: auto; }
+  :global(table.comp) { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 520px; }
+  :global(table.comp th, table.comp td) { text-align: left; vertical-align: top; padding: 0.5rem; border-bottom: 1px solid var(--border); }
+  :global(table.comp thead th) { position: sticky; top: 0; background: var(--surface); }
+  :global(table.comp tbody th) { font-weight: 600; width: 22%; }
+  :global(table.comp .grupo-fila th) { background: var(--surface-2); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-2); }
+  :global(table.comp td .crudo) { display: block; font-size: 0.75rem; color: var(--text-3); }
+  :global(table.comp td.falta) { color: var(--text-3); font-style: italic; }
+  :global(table.comp tr.igual td) { color: var(--text-2); }
+  :global(.solo-dif tr.igual) { display: none; }
+  :global(.cab-moto) { display: flex; align-items: center; gap: 0.4rem; }
+  :global(.cab-moto a) { color: var(--text); }
+  :global(.controles-tabla) { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+</style>
+
+<script>
+  import {
+    CATALOGO, GRUPOS, FUENTE_LEGIBLE, formatoValor, graficas, textoPublicado, nombreVersion, url,
+    type Grafica, type Version,
+  } from "../lib/datos";
+  import { guardar, leer } from "../lib/seleccion";
+
+  const porSlug = new Map(CATALOGO.versiones.map((v) => [v.slug, v]));
+  const selects = [...document.querySelectorAll<HTMLSelectElement>(".selectores select")];
+  const res = document.querySelector<HTMLElement>("#resultado")!;
+
+  const esc = (s: string) =>
+    s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
+
+  function desdeUrl(): string[] {
+    const p = new URLSearchParams(location.search).get("v");
+    const s = (p ? p.split(",") : leer()).filter((x) => porSlug.has(x));
+    return [...new Set(s)].slice(0, 3);
+  }
+
+  function aUrl(slugs: string[]) {
+    const u = new URL(location.href);
+    if (slugs.length) u.searchParams.set("v", slugs.join(","));
+    else u.searchParams.delete("v");
+    history.replaceState(null, "", u);
+    guardar(slugs);
+  }
+
+  function htmlGrafica(g: Grafica, vs: Version[]): string {
+    const max = Math.max(...g.barras.map((b) => b.valor ?? 0));
+    const filas = g.barras
+      .map((b, i) => {
+        const v = vs[i];
+        const nombre = esc(nombreVersion(v));
+        if (b.valor === null || !g.publicable) {
+          const motivo = b.valor === null ? b.motivo ?? "sin dato" : "Solo una moto tiene este dato: no hay con qué compararla";
+          const etiqueta = b.valor === null ? b.etiqueta : b.etiqueta;
+          return `<div class="fila-barra"><div class="nom"><span>${nombre}</span><b>${esc(etiqueta)}</b></div>
+            <div class="sin-barra">${esc(motivo)}</div></div>`;
+        }
+        const pct = max > 0 ? (b.valor / max) * 100 : 0;
+        const incierto = b.confianza && b.confianza !== "alta";
+        return `<div class="fila-barra" tabindex="0" aria-label="${nombre}: ${esc(b.etiqueta)}">
+          <div class="nom"><span>${nombre}</span><b>${esc(b.etiqueta)}${incierto ? ` <span class="conf conf-${b.confianza}" title="Confianza ${b.confianza}"></span>` : ""}</b></div>
+          <div class="pista"><div class="relleno${incierto ? " incierto" : ""}" style="width:${pct.toFixed(1)}%;background:var(--series-${i + 1})"></div></div>
+          <div class="tooltip" role="tooltip">${esc(b.detalle)}</div></div>`;
+      })
+      .join("");
+    const sub = g.publicable ? "" : `<p class="pequeno muted">No hay al menos dos datos comparables, así que no se grafica.</p>`;
+    return `<section class="grafica panel${g.publicable ? "" : " no-publicable"}">
+      <h3>${esc(g.titulo)} <span class="tenue pequeno">${esc(g.unidad)}</span></h3>${sub}${filas}
+      ${g.nota ? `<p class="nota">${esc(g.nota)}</p>` : ""}</section>`;
+  }
+
+  function htmlTabla(vs: Version[]): string {
+    const claves = Object.keys(CATALOGO.atributos)
+      .filter((k) => vs.some((v) => v.specs[k]))
+      .sort((a, b) => CATALOGO.atributos[a].orden - CATALOGO.atributos[b].orden);
+    let filas = "";
+    for (const g of Object.keys(GRUPOS)) {
+      const ks = claves.filter((k) => CATALOGO.atributos[k].grupo === g);
+      if (!ks.length) continue;
+      filas += `<tr class="grupo-fila"><th colspan="${vs.length + 1}">${GRUPOS[g]}</th></tr>`;
+      for (const k of ks) {
+        const a = CATALOGO.atributos[k];
+        const vals = vs.map((v) => (v.specs[k] ? formatoValor(k, v.specs[k]) : null));
+        const igual = vals.every((x) => x !== null && x === vals[0]);
+        const celdas = vs
+          .map((v) => {
+            const d = v.specs[k];
+            if (!d) return `<td class="falta">no publicado</td>`;
+            const tit = `${FUENTE_LEGIBLE[d.fuente_tipo] ?? d.fuente_tipo}, ${d.fecha}${d.notas ? " · " + d.notas : ""}`;
+            return `<td>${esc(formatoValor(k, d))}${d.confianza !== "alta" ? ` <span class="conf conf-${d.confianza}">${d.confianza}</span>` : ""}
+              <a class="crudo" href="${esc(d.fuente_url)}" target="_blank" rel="noopener nofollow" title="${esc(tit)}">${textoPublicado(k, d) ? `“${esc(d.crudo)}”` : "fuente"} ↗</a></td>`;
+          })
+          .join("");
+        const nota = k === "peso_sin_especificar" ? `<span class="crudo tenue pequeno" style="display:block;font-weight:400">Tipo no declarado: no comparable entre marcas</span>` : "";
+        filas += `<tr class="${igual ? "igual" : ""}"><th scope="row">${esc(a.nombre)}${nota}</th>${celdas}</tr>`;
+      }
+    }
+    const precio = vs
+      .map((v) => (v.precio ? `<td>$${v.precio.valor_cop.toLocaleString("es-CO")}<span class="crudo">al ${v.precio.fecha}</span></td>` : `<td class="falta">sin precio</td>`))
+      .join("");
+    const cab = vs
+      .map((v, i) => `<th scope="col"><span class="cab-moto"><span class="sw" style="background:var(--series-${i + 1})"></span><a href="${url(`/moto/${v.slug}/`)}">${esc(nombreVersion(v))}</a></span></th>`)
+      .join("");
+    return `<div class="tabla-wrap panel"><table class="comp"><thead><tr><th scope="col"><span class="visualmente-oculto">Dato</span></th>${cab}</tr></thead>
+      <tbody><tr class="grupo-fila"><th colspan="${vs.length + 1}">Precio</th></tr><tr><th scope="row">Precio sugerido</th>${precio}</tr>${filas}</tbody></table></div>`;
+  }
+
+  function pintar() {
+    const slugs = selects.map((s) => s.value).filter(Boolean);
+    const unicos = [...new Set(slugs)];
+    aUrl(unicos);
+    const vs = unicos.map((s) => porSlug.get(s)!);
+    if (vs.length < 2) {
+      res.innerHTML = `<p class="muted">Elige al menos dos motos. También puedes marcarlas desde el <a href="${url("/")}">listado</a>.</p>`;
+      return;
+    }
+    const avisos: string[] = [];
+    if (unicos.length < slugs.length) avisos.push("Elegiste la misma moto dos veces; se muestra una sola vez.");
+    const segs = new Set(vs.map((v) => v.segmento));
+    if (segs.size > 1) {
+      const nombres = [...segs].map((s) => CATALOGO.segmentos[s].nombre).join(", ");
+      avisos.push(`Son de segmentos distintos (${nombres}). Las cifras se pueden poner lado a lado, pero las motos no buscan lo mismo: una scooter no compite con una doble propósito.`);
+    }
+    const sinPesoTipado = vs.filter((v) => !v.specs.peso_seco && !v.specs.peso_orden_marcha);
+    if (sinPesoTipado.length)
+      avisos.push(`${sinPesoTipado.map((v) => esc(nombreVersion(v))).join(" y ")} no declara${sinPesoTipado.length > 1 ? "n" : ""} si su peso es en seco o en orden de marcha, así que queda fuera de la gráfica de peso.`);
+    const gs = graficas(vs);
+    const pub = gs.filter((g) => g.publicable);
+    const nopub = gs.filter((g) => !g.publicable);
+    res.innerHTML = `
+      ${avisos.length ? `<div class="avisos">${avisos.map((a) => `<p class="aviso">${a}</p>`).join("")}</div>` : ""}
+      <h2>Gráficas</h2>
+      <p class="pequeno muted">Cada gráfica compara solo datos del mismo tipo. Las barras rayadas son datos de confianza media o baja. Pasa el cursor o toca una barra para ver cómo lo publica la marca.</p>
+      <div class="graficas">${pub.map((g) => htmlGrafica(g, vs)).join("")}</div>
+      ${nopub.length ? `<h2>Sin datos suficientes para graficar</h2><div class="graficas">${nopub.map((g) => htmlGrafica(g, vs)).join("")}</div>` : ""}
+      <div class="controles-tabla"><h2>Ficha lado a lado</h2>
+        <label class="pequeno"><input type="checkbox" id="solodif"> Solo mostrar diferencias</label></div>
+      ${htmlTabla(vs)}`;
+    const chk = res.querySelector<HTMLInputElement>("#solodif")!;
+    chk.addEventListener("change", () => res.querySelector(".tabla-wrap")!.classList.toggle("solo-dif", chk.checked));
+  }
+
+  const inicial = desdeUrl();
+  selects.forEach((s, i) => {
+    s.value = inicial[i] ?? "";
+    s.addEventListener("change", pintar);
+  });
+  pintar();
+</script>

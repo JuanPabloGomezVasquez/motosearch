@@ -78,3 +78,29 @@ def test_catalogo_python_coincide_con_seed_sql():
     bloque = sql.split("INSERT INTO atributo", 1)[1].split(";", 1)[0]
     claves_sql = set(re.findall(r"^\s*\('([a-z_]+)'", bloque, flags=re.MULTILINE))
     assert claves_sql == set(ATRIBUTOS)
+
+
+def test_exportar_catalogo_real():
+    from motosearch.exportar import catalogo_desde_seed, exportar
+
+    atributos, segmentos = catalogo_desde_seed()
+    assert atributos["peso_sin_especificar"]["rankeable"] is False
+    assert atributos["potencia_max"]["nombre"] == "Potencia máxima"
+    assert "naked" in segmentos
+    d = exportar(RAIZ / "data" / "manual" / "fichas_fase0.csv", RAIZ / "data" / "manual" / "precios.csv")
+    assert len(d["versiones"]) >= 20
+    for v in d["versiones"]:
+        for dato in v["specs"].values():
+            assert dato["valor"] not in (0, None, "")
+            assert dato["fuente_url"].startswith("http")
+
+
+def test_json_de_la_web_esta_al_dia():
+    """Si falla: corre `motosearch exportar` y haz commit de web/src/data/catalogo.json."""
+    import json
+
+    from motosearch.exportar import exportar
+
+    ruta = RAIZ / "web" / "src" / "data" / "catalogo.json"
+    d = exportar(RAIZ / "data" / "manual" / "fichas_fase0.csv", RAIZ / "data" / "manual" / "precios.csv")
+    assert json.loads(ruta.read_text(encoding="utf-8")) == d
