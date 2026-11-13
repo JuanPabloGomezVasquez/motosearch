@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+# Crudos de captura: van al bucket, no al repo
+data/crudo/
+.env
+pipeline/uv.lock

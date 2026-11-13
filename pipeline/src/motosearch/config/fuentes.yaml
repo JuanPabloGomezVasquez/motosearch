@@ -1,0 +1,127 @@
+# Registro de fuentes. Ningún scraper corre contra una fuente que no esté en estado "aprobada".
+# Estados: pendiente_auditoria | aprobada | solo_manual | excluida
+# Auditoría del 2026-11-13: docs/fase0/auditoria-fuentes.md
+# Regla para todas: solo se extraen HECHOS (ficha técnica y precio). Nunca fotos ni textos de marketing.
+
+fuentes:
+  - id: honda-fanalca
+    nombre: Honda Motos Colombia (Fanalca)
+    marcas: [honda]
+    url: https://motos.honda.com.co
+    estado: solo_manual
+    metodo: manual
+    notas: >
+      robots.txt permite todo. Pero los términos (§4.2 f y h) prohíben reproducir los contenidos y
+      limitan el uso de la información "sólo para fines de la transacción y con la citación de la
+      fuente". Es la fuente con la cláusula más restrictiva. Carga manual con cita y enlace hasta
+      pedir permiso a Fanalca.
+
+  - id: suzuki-co
+    nombre: Suzuki Motor de Colombia
+    marcas: [suzuki]
+    url: https://www.suzuki.com.co
+    estado: pendiente_auditoria
+    metodo: html
+    notas: >
+      robots.txt (Drupal estándar) no bloquea páginas de producto; bloquea /search/.
+      No se encontró página de términos de uso en el sitio.
+
+  - id: yamaha-incolmotos
+    nombre: Incolmotos Yamaha
+    marcas: [yamaha]
+    url: https://www.incolmotos-yamaha.com.co
+    estado: pendiente_auditoria
+    metodo: html
+    notas: robots.txt solo bloquea /distribuidor/. No se encontró página de términos.
+
+  - id: hero-co
+    nombre: Hero Motos Colombia
+    marcas: [hero]
+    url: https://www.heromotos.com.co
+    estado: pendiente_auditoria
+    metodo: html
+    notas: WordPress; robots.txt solo bloquea /wp-admin/. Solo hay aviso de privacidad, sin términos.
+
+  - id: vento-co
+    nombre: Vento Colombia
+    marcas: [vento]
+    url: https://www.vento.com.co
+    estado: pendiente_auditoria
+    metodo: html
+    notas: WordPress; robots.txt solo bloquea /wp-admin/. Solo política de datos, sin términos.
+
+  - id: auteco
+    nombre: Auteco Mobility
+    marcas: [tvs, victory]
+    url: https://www.auteco.com.co
+    estado: pendiente_auditoria
+    metodo: js
+    notas: >
+      Tienda VTEX. robots.txt prohíbe toda URL con parámetros (Disallow: /*?, salvo ?page= e
+      ?idsku=), /busca/ y /quick-view/. Permite /api/catalog_system/ explícitamente. El scraper debe
+      usar URLs limpias de producto o esa API. Sin página de términos encontrada. tvsmotos.com.co y
+      victorymotos.com.co no se pudieron leer.
+
+  - id: royal-enfield-co
+    nombre: Royal Enfield Colombia
+    marcas: [royal-enfield]
+    url: https://www.royalenfield.com/co/es/
+    estado: pendiente_auditoria
+    metodo: js
+    notas: >
+      robots.txt permite /co*. Términos: contenido "solely for personal, non-commercial use"; prohíbe
+      reproducir/publicar. Las specs son hechos, pero el riesgo contractual existe si se monetiza.
+
+  - id: ktm-co
+    nombre: KTM Colombia
+    marcas: [ktm]
+    url: null
+    estado: pendiente_auditoria
+    metodo: js
+    notas: >
+      ktm.com/robots.txt solo bloquea /content/dam/ y similares, pero la página de Colombia
+      (ktm.com/es-co) no se pudo leer. Falta confirmar distribuidor y URL con precios para Colombia.
+
+  - id: bajaj-co
+    nombre: Bajaj Colombia
+    marcas: [bajaj]
+    url: null
+    estado: pendiente_auditoria
+    metodo: html
+    notas: >
+      El documento de diseño la daba como Auteco: es un error. Según prensa, Bajaj Auto nombró a
+      Grupo UMA distribuidor oficial y la web de Auteco ya no la muestra. Falta encontrar la web oficial.
+
+  - id: akt-co
+    nombre: AKT Motos
+    marcas: [akt]
+    url: null
+    estado: pendiente_auditoria
+    metodo: html
+    notas: Ningún dominio probado (akt.com.co, aktmotos.com, aktmotos.com.co) se pudo leer. Sin verificar.
+
+  - id: andi-fenalco
+    nombre: Boletín Industria Motocicletas ANDI-Fenalco (datos RUNT)
+    marcas: []
+    url: https://www.andi.com.co
+    estado: solo_manual
+    metodo: pdf
+    notas: >
+      PDF mensual. Carga manual o semiautomática desde el PDF descargado a mano. El robots.txt no se
+      pudo leer. Citar siempre la fuente.
+
+  - id: marketplaces
+    nombre: MercadoLibre, TuCarro y similares
+    marcas: []
+    url: null
+    estado: excluida
+    metodo: manual
+    notas: Fuera del alcance (decisión 2026-11-13). Datos personales (Ley 1581) y términos anti-scraping.
+
+  - id: runt
+    nombre: RUNT consulta directa
+    marcas: []
+    url: null
+    estado: excluida
+    metodo: manual
+    notas: Consulta con captcha, no es API abierta. No tocar.
