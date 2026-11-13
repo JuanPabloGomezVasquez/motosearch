@@ -73,32 +73,41 @@ fuentes:
       reproducir/publicar. Las specs son hechos, pero el riesgo contractual existe si se monetiza.
 
   - id: ktm-co
-    nombre: KTM Colombia
+    nombre: KTM Colombia (fichas) + Autocolombiana (precios)
     marcas: [ktm]
-    url: null
-    estado: pendiente_auditoria
-    metodo: js
-    notas: >
-      ktm.com/robots.txt solo bloquea /content/dam/ y similares, pero la página de Colombia
-      (ktm.com/es-co) no se pudo leer. Falta confirmar distribuidor y URL con precios para Colombia.
-
-  - id: bajaj-co
-    nombre: Bajaj Colombia
-    marcas: [bajaj]
-    url: null
+    url: https://www.ktm.com/es-co/models.html
     estado: pendiente_auditoria
     metodo: html
     notas: >
-      El documento de diseño la daba como Auteco: es un error. Según prensa, Bajaj Auto nombró a
-      Grupo UMA distribuidor oficial y la web de Auteco ya no la muestra. Falta encontrar la web oficial.
+      Distribuidor desde 2024: Autocolombiana S.A.S. (grupo Autogermana); Auteco sigue como
+      ensamblador (Portafolio, 24-oct-2023). Fichas en ktm.com/es-co/.../especificaciones-tecnicas.html,
+      sin precios. Términos de ktm.com: "No usage rights in and to the Content are granted" y prohíben
+      publicar/duplicar el contenido con fines comerciales; datos de pesos y medidas "non-binding".
+      Precios COP en autocolombiana.com.co (VTEX): robots.txt permite /, bloquea /*?, parámetros de
+      filtro y /Busca/; sus términos publicados solo desarrollan la sección de datos personales.
+
+  - id: bajaj-co
+    nombre: Bajaj Colombia (Grupo UMA)
+    marcas: [bajaj]
+    url: https://grupouma.com/colombia/
+    estado: pendiente_auditoria
+    metodo: html
+    notas: >
+      Grupo UMA es distribuidor único desde el 3-sep-2020 (antes Auteco). Web oficial:
+      grupouma.com/colombia/ (WordPress multipaís). robots.txt leído: solo bloquea /wp-admin/ y
+      *comparador*.webp. Las páginas de motos y los "Términos y condiciones de uso web" no se pudieron
+      leer con el lector automático. Manuales en colombia.globalbajaj.com/es-co/ownerszone (no cargó).
 
   - id: akt-co
     nombre: AKT Motos
     marcas: [akt]
-    url: null
+    url: https://aktmotos.com
     estado: pendiente_auditoria
     metodo: html
-    notas: Ningún dominio probado (akt.com.co, aktmotos.com, aktmotos.com.co) se pudo leer. Sin verificar.
+    notas: >
+      Dominio confirmado (Wikipedia y buscador: aktmotos.com/motos-akt/<categoria>/<modelo>/; NKD en
+      nkd.aktmotos.com). Ninguna página, ni robots.txt, se pudo leer con el lector automático.
+      Grupo Corbeta. Sin verificar robots ni términos.
 
   - id: andi-fenalco
     nombre: Boletín Industria Motocicletas ANDI-Fenalco (datos RUNT)
@@ -107,8 +116,9 @@ fuentes:
     estado: solo_manual
     metodo: pdf
     notas: >
-      PDF mensual. Carga manual o semiautomática desde el PDF descargado a mano. El robots.txt no se
-      pudo leer. Citar siempre la fuente.
+      PDF mensual. Carga manual o semiautomática desde el PDF descargado a mano. El robots.txt de
+      andi.com.co no se pudo leer; su página de la Cámara de Motocicletas no enlaza el informe. El de
+      fenalco.com.co no prohíbe nada. Citar siempre la fuente.
 
   - id: marketplaces
     nombre: MercadoLibre, TuCarro y similares
