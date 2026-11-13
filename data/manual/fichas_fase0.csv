@@ -9,7 +9,6 @@ suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,alimentacion,inyecc
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,arranque,electrico,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,norma_emisiones,Euro 3,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,marchas,4,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,Página: '4 velocidades - manual'
-suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,peso_seco,96 kg,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,capacidad_tanque,"3,9 Litro",web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,distancia_ejes,1220 mm,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,distancia_piso,150 mm,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
@@ -18,6 +17,7 @@ suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,freno_trasero,tambo
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,abs,1 canal,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,media,Página: 'Disco (ABS)' solo en el freno delantero; canales inferidos
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,llanta_delantera,70/90-17M/C 38P,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
 suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,llanta_trasera,80/90-17M/C 50P,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,alta,
+suzuki,Viva FI,sin verificar,2027,ABS,vigente,semiautomatica,peso_sin_especificar,96 kg,web_marca,https://www.suzuki.com.co/motocicletas/semiautomaticas/viva-fi-abs,2026-11-13,media,"La web solo dice 'Peso'; el 'Peso en seco' del texto alternativo del ícono es genérico (aparece igual en la Gixxer, cuyo catálogo dice orden de marcha)"
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,cilindrada,113 cm3,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,potencia_max,"9,25 HP a 8000 RPM",web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,torque_max,"8,55 NM a 6250 RPM",web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
@@ -26,7 +26,6 @@ suzuki,Address NM,sin verificar,2027,,vigente,scooter,refrigeracion,aire,web_mar
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,alimentacion,inyeccion,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,arranque,electrico+pedal,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,Página: 'Eléctrico y Pedal'
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,transmision_tipo,cvt,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
-suzuki,Address NM,sin verificar,2027,,vigente,scooter,peso_seco,96 kg,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,capacidad_tanque,5.2L,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,altura_sillin,755 mm,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,distancia_ejes,1260 mm,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
@@ -39,6 +38,7 @@ suzuki,Address NM,sin verificar,2027,,vigente,scooter,suspension_delantera,Teles
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,suspension_trasera,Mono Amortiguado sin graduación,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,llanta_delantera,80/90 R14 M/C 40P TUBELESS,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
 suzuki,Address NM,sin verificar,2027,,vigente,scooter,llanta_trasera,90/90 R14 M/C 46P TUBELESS,web_marca,https://www.suzuki.com.co/motocicletas/automaticas/address-nm,2026-11-13,alta,
+suzuki,Address NM,sin verificar,2027,,vigente,scooter,peso_seco,96 Kg,pdf_marca,https://www.suzuki.com.co/sites/default/files/2026-09/CATALOGO%20SUZUKI%20ADRESS%20NM%20-%20VIG%201%20ENE%20-%2031%20MAR%202026.pdf,2026-11-13,alta,Catálogo PDF: 'Peso en seco'
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,cilindrada,155 cm3,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,cilindros,1,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,tiempos,4T,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
@@ -46,7 +46,6 @@ suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,refrigeracion,aire,web
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,alimentacion,inyeccion,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,arranque,electrico,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,marchas,5,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
-suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,peso_seco,138 Kg,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,capacidad_tanque,12 L / 3.17 Gal,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,altura_sillin,795 mm,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,distancia_ejes,1335 mm,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
@@ -58,6 +57,7 @@ suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,suspension_delantera,T
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,suspension_trasera,Mono Amortiguado Ajustable en 7 posiciones,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,llanta_delantera,100/80 R 17 M/C,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
 suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,llanta_trasera,140/60 R 17 M/C,web_marca,https://www.suzuki.com.co/motocicletas/sport/gixxer-fi-150-abs,2026-11-13,alta,
+suzuki,Gixxer FI 150,sin verificar,2027,ABS,vigente,naked,peso_orden_marcha,138 Kg,pdf_marca,https://www.suzuki.com.co/sites/default/files/2026-09/CATALOGO%20SUZUKI%20GIXXER%20150%20FI%20ABS%20%20-%20VIG%201%20SEP%20-%2030%20NOV%202026.pdf,2026-11-13,media,Catálogo PDF: 'Peso en orden de marcha'; la web dice solo 'Peso'
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,cilindrada,149 cm3,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,potencia_max,"11,8 HP @ 8000 rpm",web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,torque_max,11.6 Nm@ 6000 rpm,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
@@ -65,7 +65,6 @@ suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,alimentacion,carbur
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,arranque,electrico+pedal,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,Página: 'Eléctrico y patada'
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,marchas,5,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,norma_emisiones,Euro 3,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,media,Aparece bajo la etiqueta 'Sistema de válvulas'; error de maquetación de la página
-suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,peso_seco,139 kg,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,distancia_ejes,1360 mm,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,distancia_piso,244 mm,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,freno_delantero,disco,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
@@ -73,6 +72,7 @@ suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,freno_trasero,tambo
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,abs,1 canal,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,media,Página: 'Disco (ABS)' solo delantero; canales inferidos
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,llanta_delantera,90/90-19,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
 suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,llanta_trasera,110/90-17,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,alta,
+suzuki,DR 150,sin verificar,2027,ABS,vigente,doble-proposito,peso_sin_especificar,139 kg,web_marca,https://www.suzuki.com.co/motocicletas/enduro/dr-150-abs,2026-11-13,media,"La web solo dice 'Peso'; el 'Peso en seco' del texto alternativo del ícono es genérico (aparece igual en la Gixxer, cuyo catálogo dice orden de marcha)"
 yamaha,Crypton FINN,sin verificar,2027,,vigente,semiautomatica,cilindrada,114 cc,web_marca,https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/,2026-11-13,alta,
 yamaha,Crypton FINN,sin verificar,2027,,vigente,semiautomatica,potencia_max,8.85 Hp a 7000 rpm,web_marca,https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/,2026-11-13,alta,
 yamaha,Crypton FINN,sin verificar,2027,,vigente,semiautomatica,torque_max,9.2 Nm a 5500 rpm,web_marca,https://www.incolmotos-yamaha.com.co/vehiculo/t115finn/29453/,2026-11-13,alta,
@@ -165,7 +165,6 @@ honda,DIO LED,sin verificar,2027,STD,vigente,scooter,refrigeracion,aire,web_marc
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,transmision_tipo,cvt,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,Página: 'Automatica V-Matic'
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,arranque,electrico+pedal,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,norma_emisiones,Euro 3,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,Página: 'EURO III'
-honda,DIO LED,sin verificar,2027,STD,vigente,scooter,peso_seco,104 Kg,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,media,La marca dice 'Peso: Neto'; se asume seco
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,distancia_ejes,1.238 mm,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,freno_delantero,tambor,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,Página: 'Tambor 130 mm – Combinado'
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,freno_trasero,tambor,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
@@ -174,6 +173,9 @@ honda,DIO LED,sin verificar,2027,STD,vigente,scooter,suspension_delantera,Doble 
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,suspension_trasera,Brazo Oscilante,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,llanta_delantera,90/100 – 10,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
 honda,DIO LED,sin verificar,2027,STD,vigente,scooter,llanta_trasera,90/100 – 10,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,alta,
+honda,DIO LED,sin verificar,2027,STD,vigente,scooter,peso_sin_especificar,Neto 104 Kg,web_marca,https://motos.honda.com.co/motos-honda/scooter-y-semiautomatica/DIO-LED-STD,2026-11-13,media,Web: 'Peso: Neto 104 Kg'. 'Neto' no es seco: el manual da 99 kg en seco
+honda,DIO LED,sin verificar,2027,STD,vigente,scooter,peso_seco,99 kg,manual_usuario,https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-dio-std.pdf,2026-11-13,media,"Manual del propietario (2017), puede corresponder a una versión anterior"
+honda,DIO LED,sin verificar,2027,STD,vigente,scooter,capacidad_tanque,5.3 Lts.,manual_usuario,https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-dio-std.pdf,2026-11-13,media,Manual del propietario (2017); incluye reserva
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,cilindrada,124.7 cc,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,Términos de Honda: uso de la información citando la fuente; carga manual
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,potencia_max,"8,41 HP @ 7.500 rpm",web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,torque_max,"9,65 Nm @ 5.000 rpm",web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
@@ -182,7 +184,6 @@ honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,refrigeracion,aire,web_marc
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,transmision_tipo,manual,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,Página: 'Mecánica'; número de marchas no publicado
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,arranque,electrico+pedal,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,norma_emisiones,Euro 3,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
-honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,peso_seco,117 Kilogramos,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,distancia_ejes,1.310 mm,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,freno_delantero,disco,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,Página: 'Disco CBS'
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,freno_trasero,tambor,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
@@ -191,6 +192,8 @@ honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,suspension_delantera,Horqui
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,suspension_trasera,Brazo Oscilante,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,llanta_delantera,80/100 - 18 M 47 P,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
 honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,llanta_trasera,90/90 - 18 M 51 P,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,alta,
+honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,peso_sin_especificar,117 Kilogramos,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-125F-STD-20,2026-11-13,media,Manual: 'Peso neto del vehículo 117 kg'; Honda no define 'neto'
+honda,CB 125F,sin verificar,2027,STD,vigente,trabajo,capacidad_tanque,"10,1 L",manual_usuario,https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/manual-cb125f.pdf,2026-11-13,media,Manual del propietario (2018)
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,cilindrada,184.4 cc,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,Términos de Honda: uso de la información citando la fuente; carga manual
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,potencia_max,"16,4 HP / 8.500 RPM",web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,torque_max,"15,5 Nm / 6.000 RPM",web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
@@ -199,7 +202,6 @@ honda,CB 190R,sin verificar,2027,2.0,vigente,naked,refrigeracion,aire,web_marca,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,marchas,5,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,arranque,electrico,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,norma_emisiones,Euro 3,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
-honda,CB 190R,sin verificar,2027,2.0,vigente,naked,peso_seco,141 kg,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,distancia_ejes,1.355 mm,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,freno_delantero,disco,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,freno_trasero,disco,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
@@ -208,6 +210,8 @@ honda,CB 190R,sin verificar,2027,2.0,vigente,naked,suspension_delantera,Telescó
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,suspension_trasera,Monoamortiguada,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,llanta_delantera,110/70 - R 17,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
 honda,CB 190R,sin verificar,2027,2.0,vigente,naked,llanta_trasera,140/70 - R 17,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,alta,
+honda,CB 190R,sin verificar,2027,2.0,vigente,naked,peso_sin_especificar,141 kg,web_marca,https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20,2026-11-13,media,Manual: 'Peso neto de la motocicleta 141 kg'; Honda no define 'neto'
+honda,CB 190R,sin verificar,2027,2.0,vigente,naked,capacidad_tanque,"12,0 L",manual_usuario,https://d3lewjhzzgclom.cloudfront.net/sites/default/files/2026-08/nueva-CB190R.pdf,2026-11-13,media,Manual del propietario (2019)
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,cilindrada,184 cc,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,"Términos de Honda: uso de la información citando la fuente; carga manual. El texto de la misma página dice 184,43 cc"
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,potencia_max,"15,6 Hp @ 8500 rpm",web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,torque_max,"15,7 Nm @ 6000 rpm",web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
@@ -216,7 +220,6 @@ honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,refrigeracion,aire,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,transmision_tipo,manual,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,Página: 'Mecánica'
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,arranque,electrico+pedal,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,norma_emisiones,Euro 3,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
-honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,peso_seco,133 Kg,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,distancia_ejes,1.351 mm,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,freno_delantero,disco,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,freno_trasero,disco,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
@@ -225,6 +228,7 @@ honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,suspension_delanter
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,suspension_trasera,Monosuspensión PRO ARM,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,llanta_delantera,90 / 90-19,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
 honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,llanta_trasera,110 / 90-17,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,alta,
+honda,XR 190L,sin verificar,2027,2.0,vigente,doble-proposito,peso_sin_especificar,133 Kg,web_marca,https://motos.honda.com.co/motos-honda/todo-terreno/XR-190L-20,2026-11-13,baja,La marca no declara si es seco o en orden de marcha
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,cilindrada,97.2 cc,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,potencia_max,8.2 Hp @ 8000 rpm,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,torque_max,8.05 Nm @ 5000 rpm,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
@@ -234,20 +238,20 @@ hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,refrigeracion,aire,web_marca
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,arranque,electrico+pedal,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,transmision_tipo,manual,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,marchas,4,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,Página: 'Mecánica de 4 velocidades'
-hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,peso_seco,110 Kg,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,media,La marca dice 'Peso sin carga'; se asume seco
-hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,capacidad_tanque,10.5 Litros,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,cbs,si,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,media,Página: 'IBS Integrado'; tipo de freno no publicado
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,suspension_delantera,Hidráulica telescópica,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,suspension_trasera,Doble amortiguador ajustable en 5 pasos,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,llanta_delantera,2.75 18-4 PR/42P,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
 hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,llanta_trasera,2.75 18-6 PR/48P,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,alta,
+hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,peso_sin_especificar,110 Kg,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,media,'Peso sin carga'; el manual da 110 kg con arranque eléctrico y 107 kg con patada
+hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,capacidad_tanque,10.5 Litros,web_marca,https://heromotos.com.co/trabajo/eco-deluxe/,2026-11-13,baja,"La web dice 10,5 L; el manual dice 9,5 L incluyendo reserva"
+hero,Eco Deluxe,sin verificar,2027,,vigente,trabajo,altura_sillin,805 mm,manual_usuario,https://heromotos.com.co/wp-content/uploads/2023/09/Manual-Eco-Deluxe.pdf,2026-11-13,media,Manual del usuario
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,cilindrada,124.6 cc,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,potencia_max,"9,8 HP @ 7250 rpm",web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,torque_max,10.4 Nm @ 6000 rpm,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,tiempos,4T,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,arranque,electrico+pedal,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,transmision_tipo,cvt,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,media,Página: 'Automática'
-hero,Xoom 125,sin verificar,2027,,vigente,scooter,peso_seco,121 kg,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,media,La marca dice 'Peso sin carga'; se asume seco
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,capacidad_tanque,5 litros,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,altura_sillin,777 mm,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,distancia_ejes,1327 mm,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
@@ -256,6 +260,7 @@ hero,Xoom 125,sin verificar,2027,,vigente,scooter,suspension_delantera,Hidráuli
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,suspension_trasera,Amortiguador hidráulico sobre basculante,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,llanta_delantera,110/80-14 53P (Tubeless/ Sin Cámara),web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
 hero,Xoom 125,sin verificar,2027,,vigente,scooter,llanta_trasera,120/70-14 55P (Tubeless/ Sin Cámara),web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,alta,
+hero,Xoom 125,sin verificar,2027,,vigente,scooter,peso_sin_especificar,121 kg,web_marca,https://heromotos.com.co/scooter/xoom-125/,2026-11-13,media,'Peso sin carga'; no se pudo abrir el manual
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,cilindrada,"163,24 CC.",web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,potencia_max,"16,6 hp @8500 rpm.",web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,torque_max,"14,6 Nm @6500 rpm.",web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
@@ -264,7 +269,6 @@ hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,tiempos,4T,web_marca,https://
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,refrigeracion,aceite,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,arranque,electrico,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,marchas,5,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
-hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,peso_seco,146 Kg.,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,media,La marca dice 'Peso sin carga'; se asume seco
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,capacidad_tanque,12 Litros.,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,altura_sillin,795 mm.,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,distancia_ejes,1329 mm.,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
@@ -279,6 +283,7 @@ hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,suspension_delantera,Hidrául
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,suspension_trasera,Monoamortiguador ajustable en 7 posiciones,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,llanta_delantera,100/80/17″,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
 hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,llanta_trasera,130/70/17″,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,alta,
+hero,Hunk 160R,sin verificar,2027,4V,vigente,naked,peso_sin_especificar,146 Kg.,web_marca,https://heromotos.com.co/urbanas/hunk-160r-4v/,2026-11-13,media,'Peso sin carga'; el manual y el catálogo dan el mismo valor sin definir el tipo
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,cilindrada,"199,6 cc",web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,potencia_max,"18,9 Hp @ 8000 rpm",web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,torque_max,"17,35 Nm @ 6500 rpm",web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
@@ -289,7 +294,6 @@ hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,alimentacion,inyec
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,arranque,electrico+pedal,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,marchas,5,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,tablero,digital,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
-hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,peso_seco,159 kg,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,media,La marca dice 'Peso sin carga'; se asume seco
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,capacidad_tanque,"3,4 Galones (13 Lt)",web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,distancia_ejes,1410 mm,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,recorrido_delantero,190mm de recorrido de la rueda,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
@@ -300,6 +304,7 @@ hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,suspension_delante
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,suspension_trasera,Monoshock de 10 posiciones ajustable,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,llanta_delantera,90/90-21″ TT doble proposito,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
 hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,llanta_trasera,120/80-18″ TT doble proposito,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,alta,
+hero,Xpulse 200,sin verificar,2027,4V,vigente,doble-proposito,peso_sin_especificar,159 kg,web_marca,https://heromotos.com.co/doble-proposito/xpulse-200-4v/,2026-11-13,media,'Peso sin carga'; no se pudo abrir el manual
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,cilindrada,120 c.c.,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,El nombre comercial dice 125
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,potencia_max,10 HP,web_marca,https://vento.com.co/rapid-125/,2026-11-13,media,Sin rpm publicadas
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,torque_max,6.9 N.M./6000 RPM,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
@@ -309,7 +314,6 @@ vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,refrigeracion,aire,we
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,arranque,electrico+pedal,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,transmision_tipo,semiautomatica,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,marchas,4,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
-vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,peso_seco,97 kg,web_marca,https://vento.com.co/rapid-125/,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,capacidad_tanque,3.5 litros,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,altura_sillin,79 cm,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,freno_delantero,disco,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
@@ -319,12 +323,12 @@ vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,suspension_delantera,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,suspension_trasera,Doble Amortiguador,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,llanta_delantera,2.5 R17,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
 vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,llanta_trasera,3.0 R16,web_marca,https://vento.com.co/rapid-125/,2026-11-13,alta,
+vento,Rapid 125,sin verificar,2027,,vigente,semiautomatica,peso_sin_especificar,97 kg,web_marca,https://vento.com.co/rapid-125/,2026-11-13,baja,La marca no declara si es seco o en orden de marcha
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,cilindrada,125.1 c.c.,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,potencia_max,8.1 HP 7500 RPM,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,tiempos,4T,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,refrigeracion,aire,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,Página: 'aire forzado'
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,transmision_tipo,cvt,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
-vento,Ovni 125,sin verificar,2027,,vigente,scooter,peso_seco,95 kg,web_marca,https://vento.com.co/ovni-125/,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,capacidad_tanque,4.5 litros,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,altura_sillin,76 cm,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,freno_delantero,disco,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
@@ -335,6 +339,7 @@ vento,Ovni 125,sin verificar,2027,,vigente,scooter,suspension_delantera,Horquill
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,suspension_trasera,Amortiguador con Resorte,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,llanta_delantera,90/90 R12,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
 vento,Ovni 125,sin verificar,2027,,vigente,scooter,llanta_trasera,3.50 R10,web_marca,https://vento.com.co/ovni-125/,2026-11-13,alta,
+vento,Ovni 125,sin verificar,2027,,vigente,scooter,peso_sin_especificar,95 kg,web_marca,https://vento.com.co/ovni-125/,2026-11-13,baja,La marca no declara si es seco o en orden de marcha
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,cilindrada,223 c.c.,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,El nombre comercial dice 250
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,potencia_max,20 HP,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,media,Sin rpm publicadas
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,torque_max,16 N.M./6500 RPM,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
@@ -345,7 +350,6 @@ vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,alimentacion,in
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,arranque,electrico+pedal,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,transmision_tipo,manual,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,marchas,6,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
-vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,peso_seco,135 kg,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,capacidad_tanque,20 litros,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,altura_sillin,80 cm,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,freno_delantero,disco,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
@@ -355,6 +359,7 @@ vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,suspension_dela
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,suspension_trasera,Mono Suspensión,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,llanta_delantera,100/80 R17,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
 vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,llanta_trasera,130/80 R17,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,alta,
+vento,Screamer Sportivo 250,sin verificar,2027,EFI,vigente,naked,peso_sin_especificar,135 kg,web_marca,https://vento.com.co/screamer-sportivo-250/,2026-11-13,baja,La marca no declara si es seco o en orden de marcha
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,cilindrada,196.4 c.c.,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,potencia_max,16  HP a 7.000 RPM,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,torque_max,13 N.M a 5.500 RPM,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
@@ -364,7 +369,6 @@ vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,refrigeracion,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,arranque,electrico+pedal,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,transmision_tipo,manual,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,marchas,5,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
-vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,peso_seco,132 kg,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,baja,"La marca dice solo 'Peso', sin aclarar si es seco u orden de marcha"
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,capacidad_tanque,12 litros,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,altura_sillin,85 cm,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,freno_delantero,disco,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
@@ -374,3 +378,4 @@ vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,suspension_del
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,suspension_trasera,Mono Suspensión,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,llanta_delantera,90/100 R21,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
 vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,llanta_trasera,110/100 R18,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,alta,
+vento,Crossmax 200,sin verificar,2027,PRO,vigente,doble-proposito,peso_sin_especificar,132 kg,web_marca,https://vento.com.co/crossmax-200-pro/,2026-11-13,baja,La marca no declara si es seco o en orden de marcha

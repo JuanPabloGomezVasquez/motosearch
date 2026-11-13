@@ -163,8 +163,8 @@ def validar_fichas(ruta: Path) -> Resultado:
                 res.filas_ok += 1
 
         for v, attrs in atributos_por_version.items():
-            if "peso_seco" not in attrs and "peso_orden_marcha" not in attrs:
-                res.advertencias.append(f"{v}: sin peso (seco ni en orden de marcha)")
+            if not attrs & {"peso_seco", "peso_orden_marcha", "peso_sin_especificar"}:
+                res.advertencias.append(f"{v}: sin peso")
             if "cilindrada" not in attrs and "potencia_electrica" not in attrs:
                 res.advertencias.append(f"{v}: sin cilindrada ni potencia eléctrica")
     return res

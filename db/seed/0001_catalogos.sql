@@ -41,6 +41,7 @@ INSERT INTO atributo (clave, nombre, grupo, tipo_valor, unidad, valores_enum, mi
  ('marchas',             'Número de marchas',         'transmision', 'numero', NULL,     NULL, 1, 7, FALSE, NULL),
  ('peso_seco',           'Peso en seco',              'dimensiones', 'numero', 'kg',     NULL, 60, 400, TRUE, 'Sin fluidos. No comparable con peso en orden de marcha'),
  ('peso_orden_marcha',   'Peso en orden de marcha',   'dimensiones', 'numero', 'kg',     NULL, 70, 450, TRUE, 'Con fluidos y tanque al 90% o lleno según marca'),
+ ('peso_sin_especificar','Peso (tipo no declarado)',  'dimensiones', 'numero', 'kg',     NULL, 60, 450, FALSE, 'La marca no dice si es seco o en orden de marcha. No comparable entre marcas'),
  ('capacidad_tanque',    'Capacidad del tanque',      'dimensiones', 'numero', 'L',      NULL, 3, 35, TRUE, NULL),
  ('altura_sillin',       'Altura del sillín',         'dimensiones', 'numero', 'mm',     NULL, 600, 1000, TRUE, NULL),
  ('distancia_ejes',      'Distancia entre ejes',      'dimensiones', 'numero', 'mm',     NULL, 1000, 1800, TRUE, NULL),

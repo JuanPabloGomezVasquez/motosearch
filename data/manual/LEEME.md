@@ -21,8 +21,9 @@ cd pipeline && uv run motosearch validar ../data/manual/fichas_fase0.csv
 - `valor_crudo` se copia **tal cual** aparece en la fuente, con su unidad: `15,4 PS @ 8.500 rpm`,
   `1,4 kgf·m @ 7.000 rpm`, `142 kg`, `790 mm`. El validador convierte a la unidad canónica y
   rechaza lo que no entiende o lo que está fuera de rango.
-- Peso: usa `peso_seco` o `peso_orden_marcha` según lo que diga la marca. Si la marca dice solo
-  "peso", es `peso_seco` con confianza `baja` y una nota. No los mezcles.
+- Peso: usa `peso_seco` o `peso_orden_marcha` solo si la fuente lo dice con esas palabras (o
+  "con aceite y tanque lleno"). Si dice "Peso", "Neto" o "sin carga", es `peso_sin_especificar`:
+  se muestra en la ficha pero no entra en gráficas ni comparaciones entre marcas.
 - `segmento`: uno de `trabajo, scooter, naked, doble-proposito, sport, adventure, cruiser,
   semiautomatica, electrica`. Los criterios para casos límite están en `db/seed/0001_catalogos.sql`.
 - `generacion`: rango de años, p. ej. `2012-2016`; si sigue vigente, `2021-`.

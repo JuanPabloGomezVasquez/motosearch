@@ -53,6 +53,7 @@ _A = [
     Atributo("marchas", "numero", None, 1, 7, parser=_num),
     Atributo("peso_seco", "numero", "kg", 60, 400, parser=_num),
     Atributo("peso_orden_marcha", "numero", "kg", 70, 450, parser=_num),
+    Atributo("peso_sin_especificar", "numero", "kg", 60, 450, parser=_num),
     Atributo("capacidad_tanque", "numero", "L", 3, 35, parser=units.volumen_a_litros),
     Atributo("altura_sillin", "numero", "mm", 600, 1000, parser=_mm),
     Atributo("distancia_ejes", "numero", "mm", 1000, 1800, parser=_mm),

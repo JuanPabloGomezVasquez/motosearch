@@ -268,6 +268,7 @@ SELECT
     MAX(e.a_rpm)      FILTER (WHERE e.atributo = 'torque_max')            AS torque_rpm,
     MAX(e.valor_num)  FILTER (WHERE e.atributo = 'peso_orden_marcha')     AS peso_orden_marcha_kg,
     MAX(e.valor_num)  FILTER (WHERE e.atributo = 'peso_seco')             AS peso_seco_kg,
+    MAX(e.valor_num)  FILTER (WHERE e.atributo = 'peso_sin_especificar')  AS peso_sin_especificar_kg,
     MAX(e.valor_num)  FILTER (WHERE e.atributo = 'altura_sillin')         AS altura_sillin_mm,
     MAX(e.valor_num)  FILTER (WHERE e.atributo = 'capacidad_tanque')      AS tanque_l,
     MAX(e.valor_texto) FILTER (WHERE e.atributo = 'abs')                  AS abs,
