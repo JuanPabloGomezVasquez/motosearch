@@ -64,3 +64,18 @@ automatizaría la ambigüedad.
 - Descontinuadas (`descontinuadas.csv`): vacía; requiere manuales o archive.org.
 - Generación de cada modelo (`generacion = "sin verificar"`): las webs no dicen desde qué año se vende.
 - Suzuki: los 4 precios de noviembre tienen vigencia hasta el 30-nov-2026.
+
+## Ampliación 2026-11-13: KTM (4 versiones)
+
+Se añadieron 200 Duke 2026, 250 Duke 2027, 390 Duke 2027 y 390 Adventure X 2027, con 66 datos de
+las fichas técnicas de ktm.com/es-co, y 3 precios de Autocolombiana (la 390 Duke no aparece a la
+venta). Bajaj y AKT quedan sin fichas: sus webs no se pudieron leer con el lector automático
+(detalle en `auditoria-fuentes.md`).
+
+| Dato clave | KTM 4/4 | Comentario |
+|---|---|---|
+| Cilindrada, potencia, torque | 4/4 | Sin rpm en ninguna |
+| Peso con tipo | 3/4, confianza media | "Peso con el depósito lleno" se asimiló a orden de marcha; la 200 Duke solo da "sin combustible" |
+| Altura de sillín | 4/4 | La 390 Duke da "820/800 mm"; se tomó 800 |
+| Tanque | 2/4 | Las fichas de 250 y 390 Duke no lo traen |
+| ABS con canales | 0/4 | Dicen "ABS en curvas" sin canales; no se cargó |
