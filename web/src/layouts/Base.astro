@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+import { CATALOGO, url } from "../lib/datos";
+
+interface Props {
+  titulo: string;
+  descripcion?: string;
+  seccion?: "motos" | "comparar" | "metodologia";
+}
+const { titulo, descripcion = "Comparador de motos del mercado colombiano con fichas oficiales y la fuente de cada dato.", seccion } = Astro.props;
+---
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={descripcion} />
+    <meta name="robots" content="noindex" />
+    <title>{titulo} · motosearch</title>
+    <link rel="icon" href={url("/favicon.svg")} type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="sitio">
+      <div class="contenedor">
+        <a class="logo" href={url("/")}>motosearch</a>
+        <nav aria-label="Principal">
+          <a href={url("/")} aria-current={seccion === "motos" ? "page" : undefined}>Motos</a>
+          <a href={url("/comparar/")} aria-current={seccion === "comparar" ? "page" : undefined}>Comparar</a>
+          <a href={url("/metodologia/")} aria-current={seccion === "metodologia" ? "page" : undefined}>Cómo leer los datos</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contenedor">
+        <slot />
+      </div>
+    </main>
+    <footer class="sitio">
+      <div class="contenedor">
+        Versión de prueba con {CATALOGO.versiones.length} fichas cargadas a mano desde las webs oficiales
+        (consultadas el {CATALOGO.generado}). Las marcas cambian precios y fichas sin aviso: confirma con el
+        concesionario antes de comprar.
+      </div>
+    </footer>
+  </body>
+</html>

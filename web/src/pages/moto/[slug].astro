@@ -1,0 +1,194 @@
+---
+import Base from "../../layouts/Base.astro";
+import BarraComparar from "../../components/BarraComparar.astro";
+import {
+  CATALOGO, FUENTE_LEGIBLE, GRUPOS, faltantes, formatoCOP, textoPublicado, formatoValor, nombreVersion, url,
+  type Version,
+} from "../../lib/datos";
+
+export function getStaticPaths() {
+  return CATALOGO.versiones.map((v) => ({ params: { slug: v.slug }, props: { v } }));
+}
+
+const { v } = Astro.props as { v: Version };
+const seg = CATALOGO.segmentos[v.segmento];
+const falta = faltantes(v);
+const grupos = Object.keys(GRUPOS)
+  .map((g) => ({
+    g,
+    filas: Object.entries(v.specs)
+      .filter(([k]) => CATALOGO.atributos[k].grupo === g)
+      .sort(([a], [b]) => CATALOGO.atributos[a].orden - CATALOGO.atributos[b].orden),
+  }))
+  .filter((x) => x.filas.length);
+const mismas = CATALOGO.versiones.filter((x) => x.segmento === v.segmento && x.slug !== v.slug);
+const conteoConf = Object.values(v.specs).reduce<Record<string, number>>((acc, d) => {
+  acc[d.confianza] = (acc[d.confianza] ?? 0) + 1;
+  return acc;
+}, {});
+---
+<Base titulo={nombreVersion(v)} seccion="motos" descripcion={`Ficha técnica de la ${nombreVersion(v)} ${v.anio_modelo} con la fuente de cada dato.`}>
+  <p class="pequeno"><a href={url("/")}>← Todas las motos</a></p>
+
+  <div class="encabezado">
+    <div>
+      <p class="seg">{seg.nombre}</p>
+      <h1>{nombreVersion(v)}</h1>
+      <p class="muted">
+        Modelo {v.anio_modelo} · {v.estado === "vigente" ? "Vigente" : "Descontinuada"} ·
+        Generación: {v.generacion === "sin verificar" ? <span class="tenue">sin verificar (la marca no dice desde qué año se vende)</span> : v.generacion}
+      </p>
+    </div>
+    <button type="button" class="boton alternar" data-slug={v.slug}>+ Añadir al comparador</button>
+  </div>
+
+  <section class="panel precio">
+    <h2>Precio sugerido</h2>
+    {v.precio ? (
+      <>
+        <p class="cifra">{formatoCOP(v.precio.valor_cop)}</p>
+        <p class="pequeno muted">
+          Precio de lista de la marca, sin bonos ni financiación, consultado el {v.precio.fecha}.
+          Matrícula: {v.precio.incluye_matricula === "no" ? "no incluida" : "la marca no lo aclara"}.
+          SOAT: {v.precio.incluye_soat === "no" ? "no incluido" : "la marca no lo aclara"}.
+        </p>
+        {v.precio.notas && <p class="pequeno tenue">Nota: {v.precio.notas}</p>}
+        <p class="pequeno"><a href={v.precio.fuente_url} rel="noopener nofollow" target="_blank">Ver en la web de la marca ↗</a></p>
+      </>
+    ) : (
+      <p class="muted">
+        Sin precio cargado. {v.estado === "descontinuada" ? "Las versiones descontinuadas no llevan precio." : "La web de la marca no mostraba un precio de lista confiable el día de la consulta."}
+      </p>
+    )}
+  </section>
+
+  {falta.length > 0 && (
+    <section class="aviso faltan" aria-label="Datos que faltan">
+      <strong>La marca no publica {falta.length === 1 ? "este dato clave" : `estos ${falta.length} datos clave`}:</strong>
+      <ul>{falta.map((f) => <li>{f}</li>)}</ul>
+      {v.specs.peso_sin_especificar && !v.specs.peso_seco && !v.specs.peso_orden_marcha && (
+        <p class="pequeno">
+          Publica un peso de {formatoValor("peso_sin_especificar", v.specs.peso_sin_especificar)} pero no dice si es en seco o en
+          orden de marcha. Se muestra abajo, pero no entra en gráficas ni comparaciones con otras marcas.
+        </p>
+      )}
+    </section>
+  )}
+
+  <section class="specs">
+    <div class="titulo-specs">
+      <h2>Ficha técnica</h2>
+      <p class="pequeno muted">
+        {Object.keys(v.specs).length} datos ·
+        <span class="conf conf-alta">{conteoConf.alta ?? 0} alta</span>
+        <span class="conf conf-media">{conteoConf.media ?? 0} media</span>
+        <span class="conf conf-baja">{conteoConf.baja ?? 0} baja</span>
+        · <a href={url("/metodologia/#confianza")}>qué significa</a>
+      </p>
+    </div>
+    {grupos.map(({ g, filas }) => (
+      <div class="grupo panel">
+        <h3>{GRUPOS[g]}</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Dato</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Tal como lo publica</th>
+              <th scope="col">Confianza</th>
+              <th scope="col">Fuente</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filas.map(([k, d]) => {
+              const a = CATALOGO.atributos[k];
+              return (
+                <tr class={k === "peso_sin_especificar" ? "sin-tipo" : undefined}>
+                  <th scope="row">
+                    {a.nombre}
+                    {a.nota && <span class="nota-attr">{a.nota}</span>}
+                  </th>
+                  <td class="valor" data-l="Valor">{formatoValor(k, d)}</td>
+                  <td class="crudo" data-l="Publicado">
+                    {textoPublicado(k, d) ? `“${d.crudo}”` : <span class="tenue">clasificado a partir de la fuente</span>}
+                    {d.notas && <span class="nota-dato">{d.notas}</span>}
+                  </td>
+                  <td data-l="Confianza"><span class={`conf conf-${d.confianza}`}>{d.confianza}</span></td>
+                  <td class="fuente" data-l="Fuente">
+                    <a href={d.fuente_url} rel="noopener nofollow" target="_blank">{FUENTE_LEGIBLE[d.fuente_tipo] ?? d.fuente_tipo} ↗</a>
+                    <span class="tenue">{d.fecha}</span>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    ))}
+  </section>
+
+  {mismas.length > 0 && (
+    <section class="panel otras">
+      <h2>Compárala con otras de su segmento</h2>
+      <ul>
+        {mismas.map((m) => (
+          <li><a href={url(`/comparar/?v=${v.slug},${m.slug}`)}>{nombreVersion(v)} vs {nombreVersion(m)}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <BarraComparar />
+</Base>
+
+<style>
+  .seg { color: var(--text-2); text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; margin: 0; }
+  .encabezado { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .encabezado p { margin: 0; }
+  .precio { margin-bottom: 1rem; }
+  .precio p { margin: 0.25rem 0; }
+  .cifra { font-size: 1.6rem; font-weight: 700; }
+  .faltan { margin-bottom: 1rem; }
+  .faltan p { margin: 0.5rem 0 0; }
+  .titulo-specs { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0 0.5rem; }
+  .titulo-specs .conf { margin: 0 0.2rem; }
+  .grupo { margin-bottom: 0.9rem; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  thead th { text-align: left; font-size: 0.75rem; color: var(--text-3); font-weight: 600; border-bottom: 1px solid var(--border); padding: 0.4rem 0.5rem; }
+  tbody th, tbody td { text-align: left; vertical-align: top; padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--border); }
+  tbody tr:last-child > * { border-bottom: 0; }
+  tbody th { font-weight: 600; width: 24%; }
+  .valor { font-weight: 600; white-space: nowrap; }
+  .crudo { color: var(--text-2); }
+  .nota-attr, .nota-dato { display: block; font-weight: 400; font-size: 0.78rem; color: var(--text-3); margin-top: 0.15rem; }
+  .fuente a { white-space: nowrap; }
+  .fuente span { display: block; font-size: 0.78rem; }
+  .sin-tipo .valor { color: var(--text-2); }
+  .otras ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+  @media (max-width: 720px) {
+    thead { display: none; }
+    tbody tr { display: grid; grid-template-columns: 1fr 1fr; gap: 0.1rem 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+    tbody tr:last-child { border-bottom: 0; }
+    tbody th, tbody td { border: 0; padding: 0.1rem 0; width: auto; }
+    tbody th { grid-column: 1 / -1; }
+    .crudo { grid-column: 1 / -1; }
+    td[data-l]::before { content: attr(data-l); display: block; font-size: 0.7rem; color: var(--text-3); }
+    .valor { white-space: normal; }
+  }
+</style>
+
+<script>
+  import { MAX, alternar, leer } from "../../lib/seleccion";
+  const b = document.querySelector<HTMLButtonElement>(".encabezado .alternar")!;
+  function pintar() {
+    const s = leer();
+    const on = s.includes(b.dataset.slug!);
+    b.textContent = on ? "✓ En el comparador" : "+ Añadir al comparador";
+    b.classList.toggle("secundario", on);
+    b.disabled = !on && s.length >= MAX;
+    b.title = b.disabled ? `Ya hay ${MAX} motos en el comparador` : "";
+  }
+  b.addEventListener("click", () => alternar(b.dataset.slug!));
+  document.addEventListener("seleccion", pintar);
+  pintar();
+</script>

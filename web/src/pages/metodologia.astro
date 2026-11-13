@@ -1,0 +1,79 @@
+---
+import Base from "../layouts/Base.astro";
+import { CATALOGO, CLAVES_ESENCIALES } from "../lib/datos";
+const segmentos = Object.entries(CATALOGO.segmentos);
+---
+<Base titulo="Cómo leer los datos" seccion="metodologia">
+  <article class="texto">
+    <h1>Cómo leer los datos</h1>
+    <p>
+      Cada cifra de esta web viene de la página oficial de la marca, de su catálogo PDF o del manual del propietario.
+      Junto a cada dato está el texto tal como lo publica la marca, el enlace a la fuente, la fecha de consulta y un
+      nivel de confianza. Si algo no cuadra, el enlace permite comprobarlo.
+    </p>
+
+    <h2>Lo que falta se muestra como faltante</h2>
+    <p>
+      Si una marca no publica un dato, la web dice «no publicado». No se rellena con ceros, promedios ni estimaciones.
+      Estos son los {CLAVES_ESENCIALES.length} datos que se consideran clave; cada ficha avisa cuáles le faltan:
+    </p>
+    <ul>{CLAVES_ESENCIALES.map((c) => <li>{c.nombre}</li>)}</ul>
+
+    <h2 id="confianza">Niveles de confianza</h2>
+    <dl>
+      <dt><span class="conf conf-alta">alta</span></dt>
+      <dd>La marca lo publica de forma explícita y sin ambigüedad en su web o catálogo vigente.</dd>
+      <dt><span class="conf conf-media">media</span></dt>
+      <dd>El dato es de la marca, pero hay algo que obliga a dudar: viene de un manual de un año anterior, se dedujo de un texto como «Disco (ABS)», o la web y el catálogo se contradicen.</dd>
+      <dt><span class="conf conf-baja">baja</span></dt>
+      <dd>El dato aparece, pero es sospechoso o no se pudo contrastar. Úsalo con cuidado.</dd>
+    </dl>
+
+    <h2>El peso: por qué casi nunca se grafica</h2>
+    <p>
+      El peso en seco (sin gasolina ni aceite) y el peso en orden de marcha (listo para rodar) pueden diferir en más de
+      10 kg, así que mezclarlos falsea cualquier comparación. Muchas marcas solo escriben «Peso», «Neto» o «sin carga» sin
+      decir cuál es. Esos pesos aparecen en la ficha como <em>tipo no declarado</em>, pero no entran en gráficas ni en
+      comparaciones. En las gráficas solo se ponen lado a lado motos que declaran el mismo tipo de peso.
+    </p>
+
+    <h2>Potencia y torque</h2>
+    <p>
+      Las marcas usan hp, PS o CV. Todo se convierte a hp (1 PS = 0,986 hp) y el valor original queda visible. Algunas
+      marcas no dicen a qué rpm se logra el pico; se grafica igual, con aviso.
+    </p>
+
+    <h2>Precios</h2>
+    <p>
+      Cada marca publica varias cifras: precio normal, con bono, con financiación o «desde». Aquí se usa siempre el precio
+      de lista sin bono, con su fecha. Las promociones van como nota en la ficha. Ninguna marca incluye matrícula ni SOAT;
+      Honda no lo aclara.
+    </p>
+
+    <h2>Consumo</h2>
+    <p>
+      El consumo que declaran las marcas no sigue un protocolo común, así que se muestra pero no se usa para ordenar ni
+      graficar.
+    </p>
+
+    <h2>Segmentos</h2>
+    <p>Las comparaciones tienen más sentido dentro del mismo segmento. Criterios usados:</p>
+    <dl>
+      {segmentos.map(([, s]) => (<><dt>{s.nombre}</dt><dd>{s.criterio}</dd></>))}
+    </dl>
+
+    <h2>Límites de esta versión</h2>
+    <ul>
+      <li>Son {CATALOGO.versiones.length} versiones de 5 marcas, cargadas a mano. Con tan pocas motos por segmento no se publican promedios ni percentiles de segmento: no tendrían valor estadístico.</li>
+      <li>Faltan AKT, Bajaj, TVS, Victory, KTM y Royal Enfield.</li>
+      <li>No se sabe desde qué año se vende cada generación: las webs no lo dicen.</li>
+    </ul>
+  </article>
+</Base>
+
+<style>
+  .texto { max-width: 70ch; }
+  .texto h2 { margin-top: 1.75rem; }
+  dt { font-weight: 600; margin-top: 0.6rem; }
+  dd { margin: 0.15rem 0 0; color: var(--text-2); }
+</style>

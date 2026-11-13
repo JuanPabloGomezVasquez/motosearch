@@ -1,0 +1,224 @@
+---
+import Base from "../layouts/Base.astro";
+import BarraComparar from "../components/BarraComparar.astro";
+import {
+  CATALOGO, faltantes, formatoCOP, formatoValor, nombreVersion, pesoTipado, NOMBRE_TIPO_PESO, url,
+} from "../lib/datos";
+
+const versiones = CATALOGO.versiones;
+const segmentos = Object.entries(CATALOGO.segmentos).map(([slug, s]) => ({
+  slug, ...s, n: versiones.filter((v) => v.segmento === slug).length,
+}));
+const marcas = [...new Map(versiones.map((v) => [v.marca, v.marca_nombre])).entries()].sort((a, b) =>
+  a[1].localeCompare(b[1]),
+);
+---
+<Base titulo="Motos" seccion="motos">
+  <h1>Motos en Colombia, con la fuente de cada dato</h1>
+  <p class="muted intro">
+    {versiones.length} versiones de {marcas.length} marcas, cargadas a mano desde las webs oficiales. Elige hasta
+    tres para compararlas. Lo que la marca no publica aparece como faltante, no se rellena.
+  </p>
+
+  <section class="filtros panel" aria-label="Filtros">
+    <label class="buscar">
+      <span class="visualmente-oculto">Buscar</span>
+      <input type="search" id="q" placeholder="Buscar marca o modelo, p. ej. «NMAX» o «Hero»" autocomplete="off" />
+    </label>
+    <div class="chips" role="group" aria-label="Segmento">
+      <button type="button" class="chip" data-seg="" aria-pressed="true">Todos <span class="tenue">{versiones.length}</span></button>
+      {segmentos.map((s) => (
+        <button type="button" class="chip" data-seg={s.slug} aria-pressed="false" title={s.criterio}>
+          {s.nombre} <span class="tenue">{s.n}</span>
+        </button>
+      ))}
+    </div>
+    <div class="selects">
+      <label>Marca
+        <select id="marca">
+          <option value="">Todas</option>
+          {marcas.map(([slug, nombre]) => <option value={slug}>{nombre}</option>)}
+        </select>
+      </label>
+      <label>Ordenar por
+        <select id="orden">
+          <option value="nombre">Nombre</option>
+          <option value="precio-asc">Precio, menor primero</option>
+          <option value="precio-desc">Precio, mayor primero</option>
+          <option value="potencia-desc">Potencia, mayor primero</option>
+          <option value="cc-asc">Cilindrada, menor primero</option>
+        </select>
+      </label>
+    </div>
+    <p id="segdesc" class="pequeno tenue" aria-live="polite"></p>
+  </section>
+
+  <p id="conteo" class="pequeno muted" aria-live="polite"></p>
+
+  <ul class="grilla" id="lista">
+    {versiones.map((v) => {
+      const pt = pesoTipado(v);
+      const sinTipo = v.specs.peso_sin_especificar;
+      const falta = faltantes(v);
+      const seg = CATALOGO.segmentos[v.segmento];
+      return (
+        <li
+          class="tarjeta panel"
+          data-slug={v.slug}
+          data-seg={v.segmento}
+          data-marca={v.marca}
+          data-texto={`${nombreVersion(v)} ${seg.nombre}`.toLowerCase()}
+          data-nombre={nombreVersion(v)}
+          data-precio={v.precio?.valor_cop ?? ""}
+          data-potencia={v.specs.potencia_max?.valor ?? ""}
+          data-cc={v.specs.cilindrada?.valor ?? ""}
+        >
+          <div class="cab">
+            <span class="seg pequeno">{seg.nombre}</span>
+            <h2><a href={url(`/moto/${v.slug}/`)}>{nombreVersion(v)}</a></h2>
+            <span class="pequeno tenue">Modelo {v.anio_modelo}</span>
+          </div>
+          <p class="precio">
+            {v.precio ? (
+              <>
+                <strong>{formatoCOP(v.precio.valor_cop)}</strong>
+                <span class="pequeno tenue"> precio sugerido al {v.precio.fecha}</span>
+              </>
+            ) : (
+              <span class="tenue">Sin precio cargado</span>
+            )}
+          </p>
+          <dl class="clave">
+            <div><dt>Cilindrada</dt><dd>{v.specs.cilindrada ? formatoValor("cilindrada", v.specs.cilindrada) : <span class="tenue">sin dato</span>}</dd></div>
+            <div><dt>Potencia</dt><dd>{v.specs.potencia_max ? formatoValor("potencia_max", { ...v.specs.potencia_max, rpm: undefined }) : <span class="tenue">sin dato</span>}</dd></div>
+            <div>
+              <dt>Peso</dt>
+              <dd>
+                {pt ? (
+                  <>{formatoValor(pt.tipo, pt.dato)} <span class="sub">{NOMBRE_TIPO_PESO[pt.tipo]}</span></>
+                ) : sinTipo ? (
+                  <>{formatoValor("peso_sin_especificar", sinTipo)} <span class="sub">tipo no declarado</span></>
+                ) : (
+                  <span class="tenue">sin dato</span>
+                )}
+              </dd>
+            </div>
+          </dl>
+          {falta.length > 0 && (
+            <p class="falta pequeno" title={falta.join(", ")}>
+              Faltan {falta.length} de 8 datos clave
+            </p>
+          )}
+          <div class="acc">
+            <a class="pequeno" href={url(`/moto/${v.slug}/`)}>Ver ficha y fuentes</a>
+            <button type="button" class="chip alternar" data-slug={v.slug} aria-pressed="false">+ Comparar</button>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+  <p id="vacio" class="muted" hidden>Ninguna moto coincide con esos filtros.</p>
+
+  <BarraComparar />
+</Base>
+
+<style>
+  .intro { max-width: 68ch; }
+  .filtros { display: grid; gap: 0.75rem; margin: 1rem 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .selects { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .selects label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--text-2); }
+  #segdesc:empty { display: none; }
+  .grilla {
+    list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .tarjeta { display: flex; flex-direction: column; gap: 0.5rem; }
+  .tarjeta h2 { font-size: 1.05rem; margin: 0.1rem 0 0; }
+  .tarjeta h2 a { color: var(--text); text-decoration: none; }
+  .tarjeta h2 a:hover { text-decoration: underline; }
+  .seg { color: var(--text-2); text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.72rem; }
+  .precio { margin: 0; }
+  .clave { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+  .clave dt { font-size: 0.75rem; color: var(--text-3); }
+  .clave dd { margin: 0; font-weight: 600; font-size: 0.9rem; }
+  .clave .sub { display: block; font-weight: 400; font-size: 0.72rem; color: var(--text-3); line-height: 1.2; }
+  .acc a, .acc .chip { white-space: nowrap; }
+  .falta { margin: 0; color: var(--warn-ink); background: var(--warn-bg); border-radius: 6px; padding: 0.15rem 0.5rem; align-self: flex-start; }
+  .acc { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  .alternar[disabled] { opacity: 0.4; cursor: not-allowed; }
+</style>
+
+<script>
+  import { MAX, alternar, leer } from "../lib/seleccion";
+
+  const q = document.querySelector<HTMLInputElement>("#q")!;
+  const marca = document.querySelector<HTMLSelectElement>("#marca")!;
+  const orden = document.querySelector<HTMLSelectElement>("#orden")!;
+  const lista = document.querySelector<HTMLUListElement>("#lista")!;
+  const tarjetas = [...lista.querySelectorAll<HTMLLIElement>(".tarjeta")];
+  const chipsSeg = [...document.querySelectorAll<HTMLButtonElement>(".chips .chip")];
+  const conteo = document.querySelector<HTMLElement>("#conteo")!;
+  const vacio = document.querySelector<HTMLElement>("#vacio")!;
+  const segdesc = document.querySelector<HTMLElement>("#segdesc")!;
+  let seg = "";
+
+  const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const num = (s: string | undefined) => (s ? Number(s) : NaN);
+
+  function aplicar() {
+    const t = norm(q.value.trim());
+    let n = 0;
+    for (const el of tarjetas) {
+      const ok =
+        (!seg || el.dataset.seg === seg) &&
+        (!marca.value || el.dataset.marca === marca.value) &&
+        (!t || t.split(/\s+/).every((p) => norm(el.dataset.texto!).includes(p)));
+      el.hidden = !ok;
+      if (ok) n++;
+    }
+    const [campo, dir] = orden.value.split("-");
+    const clave = { precio: "precio", potencia: "potencia", cc: "cc" }[campo as "precio"];
+    const ordenadas = [...tarjetas].sort((a, b) => {
+      if (!clave) return a.dataset.nombre!.localeCompare(b.dataset.nombre!);
+      const va = num(a.dataset[clave]), vb = num(b.dataset[clave]);
+      // Sin dato va siempre al final: no se le asigna un valor inventado.
+      if (isNaN(va) && isNaN(vb)) return 0;
+      if (isNaN(va)) return 1;
+      if (isNaN(vb)) return -1;
+      return dir === "desc" ? vb - va : va - vb;
+    });
+    lista.append(...ordenadas);
+    conteo.textContent = `${n} de ${tarjetas.length} versiones`;
+    vacio.hidden = n > 0;
+    const chip = chipsSeg.find((c) => c.dataset.seg === seg);
+    segdesc.textContent = seg ? `Criterio del segmento: ${chip?.title ?? ""}` : "";
+  }
+
+  for (const c of chipsSeg) {
+    c.addEventListener("click", () => {
+      seg = c.dataset.seg ?? "";
+      chipsSeg.forEach((x) => x.setAttribute("aria-pressed", String(x === c)));
+      aplicar();
+    });
+  }
+  q.addEventListener("input", aplicar);
+  marca.addEventListener("change", aplicar);
+  orden.addEventListener("change", aplicar);
+
+  const botones = [...document.querySelectorAll<HTMLButtonElement>(".alternar")];
+  function pintarSel() {
+    const s = leer();
+    for (const b of botones) {
+      const on = s.includes(b.dataset.slug!);
+      b.setAttribute("aria-pressed", String(on));
+      b.textContent = on ? "✓ En comparación" : "+ Comparar";
+      b.disabled = !on && s.length >= MAX;
+      b.title = b.disabled ? `Máximo ${MAX} motos` : "";
+    }
+  }
+  botones.forEach((b) => b.addEventListener("click", () => alternar(b.dataset.slug!)));
+  document.addEventListener("seleccion", pintarSel);
+  pintarSel();
+  aplicar();
+</script>
