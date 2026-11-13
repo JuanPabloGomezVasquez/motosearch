@@ -2,6 +2,12 @@
 import Base from "../layouts/Base.astro";
 import { CATALOGO, CLAVES_ESENCIALES } from "../lib/datos";
 const segmentos = Object.entries(CATALOGO.segmentos);
+const MVP: Record<string, string> = {
+  bajaj: "Bajaj", suzuki: "Suzuki", honda: "Honda", akt: "AKT", yamaha: "Yamaha", tvs: "TVS",
+  hero: "Hero", victory: "Victory", vento: "Vento", ktm: "KTM", "royal-enfield": "Royal Enfield",
+};
+const cargadas = new Set(CATALOGO.versiones.map((v) => v.marca));
+const pendientes = Object.entries(MVP).filter(([k]) => !cargadas.has(k)).map(([, n]) => n);
 ---
 <Base titulo="Cómo leer los datos" seccion="metodologia">
   <article class="texto">
@@ -64,8 +70,8 @@ const segmentos = Object.entries(CATALOGO.segmentos);
 
     <h2>Límites de esta versión</h2>
     <ul>
-      <li>Son {CATALOGO.versiones.length} versiones de 5 marcas, cargadas a mano. Con tan pocas motos por segmento no se publican promedios ni percentiles de segmento: no tendrían valor estadístico.</li>
-      <li>Faltan AKT, Bajaj, TVS, Victory, KTM y Royal Enfield.</li>
+      <li>Son {CATALOGO.versiones.length} versiones de {cargadas.size} marcas, cargadas a mano. Con tan pocas motos por segmento no se publican promedios ni percentiles de segmento: no tendrían valor estadístico.</li>
+      {pendientes.length > 0 && <li>Faltan {pendientes.join(", ")}.</li>}
       <li>No se sabe desde qué año se vende cada generación: las webs no lo dicen.</li>
     </ul>
   </article>

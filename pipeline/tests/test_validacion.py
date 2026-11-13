@@ -88,7 +88,7 @@ def test_exportar_catalogo_real():
     assert atributos["potencia_max"]["nombre"] == "Potencia máxima"
     assert "naked" in segmentos
     d = exportar(RAIZ / "data" / "manual" / "fichas_fase0.csv", RAIZ / "data" / "manual" / "precios.csv")
-    assert len(d["versiones"]) == 20
+    assert len(d["versiones"]) >= 20
     for v in d["versiones"]:
         for dato in v["specs"].values():
             assert dato["valor"] not in (0, None, "")

@@ -329,6 +329,11 @@
    "descripcion": "Uso mixto calle y destapado",
    "criterio": "Llanta delantera >= 19 o 21 pulgadas, suspensión de recorrido largo y < 300 cc."
   },
+  "adventure": {
+   "nombre": "Trail / adventure",
+   "descripcion": "Viaje y destapado, >= 250 cc",
+   "criterio": "Vocación de viaje (parabrisas, tanque grande) y >= 250 cc. Doble propósito < 300 cc sin vocación de viaje va a doble-proposito."
+  },
   "semiautomatica": {
    "nombre": "Semiautomática",
    "descripcion": "Embrague automático, cambios con pie",
@@ -336,6 +341,192 @@
   }
  },
  "versiones": [
+  {
+   "slug": "ktm-390-adventure-x-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "390 Adventure",
+   "variante": "X",
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "adventure",
+   "specs": {
+    "cilindrada": {
+     "crudo": "398.7 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 398.7
+    },
+    "potencia_max": {
+     "crudo": "45 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 44.38,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "39 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 39.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "176 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. También declara 'Peso (sin combustible)' 165 kg",
+     "valor": 176.0
+    },
+    "altura_sillin": {
+     "crudo": "825 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 825.0
+    },
+    "capacidad_tanque": {
+     "crudo": "14 l",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Capacidad del depósito (aprox.)'",
+     "valor": 14.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinzas flotantes axiales Bybre de 2 pistones'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante Bybre de 1 pistón', disco 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX open cartridge 43 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX open cartridge 43 mm"
+    },
+    "suspension_trasera": {
+     "crudo": "WP APEX Emulsion",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX Emulsion"
+    },
+    "recorrido_delantero": {
+     "crudo": "200 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "La página del modelo dice 205 mm; la ficha técnica 200 mm",
+     "valor": 200.0
+    },
+    "distancia_piso": {
+     "crudo": "232 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 232.0
+    },
+    "distancia_ejes": {
+     "crudo": "1464 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/adventure/2027-ktm-390-adventurex/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1464.0
+    }
+   },
+   "precio": {
+    "valor_cop": 31990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-390-adventure-x-2027/p",
+    "notas": "No dice si es sugerido ni vigencia"
+   }
+  },
   {
    "slug": "hero-xpulse-200-4v-2027",
    "marca": "hero",
@@ -1723,6 +1914,502 @@
     "fuente_url": "https://motos.honda.com.co/motos-honda/motos-sport/CB-190-R-20",
     "notas": "'Precio normal'. Desde $12.190.000 con descuento"
    }
+  },
+  {
+   "slug": "ktm-200-duke-2026",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "200 Duke",
+   "variante": null,
+   "anio_modelo": 2026,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "199.5 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 199.5
+    },
+    "potencia_max": {
+     "crudo": "25 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 24.66,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "19.5 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 19.5,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Monocilíndrico'",
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Motor monocilíndrico de 4 tiempos'",
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Refrigeración líquida'",
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: '6 marchas'",
+     "valor": 6.0
+    },
+    "transmision_tipo": {
+     "crudo": "manual",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Inferido de caja de 6 marchas con embrague; la ficha no lo rotula",
+     "valor": "manual"
+    },
+    "peso_sin_especificar": {
+     "crudo": "140 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Peso (sin combustible)'. No es seco ni orden de marcha",
+     "valor": 140.0
+    },
+    "altura_sillin": {
+     "crudo": "815 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 815.0
+    },
+    "capacidad_tanque": {
+     "crudo": "13.5 l",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Capacidad del depósito (aprox.)'",
+     "valor": 13.5
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza radial de 2 pistones, disco de freno'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante de 1 pistón, disco de freno'",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX-USD Ø 37 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX-USD Ø 37 mm"
+    },
+    "suspension_trasera": {
+     "crudo": "Mono shock",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "Mono shock"
+    },
+    "distancia_piso": {
+     "crudo": "174 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Altura libre al suelo'",
+     "valor": 174.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2026-ktm-200-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": {
+    "valor_cop": 19990000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-200-duke-2027/p",
+    "notas": "Autocolombiana lo lista como 'KTM 200 DUKE 2027'; la ficha de ktm.com es 2026. No dice si es sugerido ni vigencia"
+   }
+  },
+  {
+   "slug": "ktm-250-duke-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "250 Duke",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "249.07 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 249.07
+    },
+    "potencia_max": {
+     "crudo": "31 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 30.58,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "25 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 25.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Monocilíndrico'",
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "165 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. Se asimila a orden de marcha; no menciona aceite",
+     "valor": 165.0
+    },
+    "altura_sillin": {
+     "crudo": "800 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 800.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Solo 'Diámetro del disco de freno delantero'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza flotante de un pistón', disco 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX 43",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX 43"
+    },
+    "recorrido_delantero": {
+     "crudo": "150 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 150.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-250-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": {
+    "valor_cop": 24490000,
+    "fecha": "2026-11-13",
+    "tipo": "sugerido_marca",
+    "incluye_matricula": "no",
+    "incluye_soat": "no",
+    "fuente_url": "https://www.autocolombiana.com.co/ktm-250-duke-2027/p",
+    "notas": "No dice si es sugerido ni vigencia"
+   }
+  },
+  {
+   "slug": "ktm-390-duke-2027",
+   "marca": "ktm",
+   "marca_nombre": "KTM",
+   "modelo": "390 Duke",
+   "variante": null,
+   "anio_modelo": 2027,
+   "generacion": "sin verificar",
+   "estado": "vigente",
+   "segmento": "naked",
+   "specs": {
+    "cilindrada": {
+     "crudo": "398.7 cm³",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 398.7
+    },
+    "potencia_max": {
+     "crudo": "45 PS",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 44.38,
+     "unidad_original": "ps"
+    },
+    "torque_max": {
+     "crudo": "39 Nm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Sin rpm en la ficha",
+     "valor": 39.0,
+     "unidad_original": "nm"
+    },
+    "cilindros": {
+     "crudo": "1",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1.0
+    },
+    "tiempos": {
+     "crudo": "4T",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "4T"
+    },
+    "refrigeracion": {
+     "crudo": "liquida",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "liquida"
+    },
+    "marchas": {
+     "crudo": "6",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 6.0
+    },
+    "peso_orden_marcha": {
+     "crudo": "165 kg",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: 'Peso con el depósito lleno'. Mismo valor que la 250 Duke; posible error de la página",
+     "valor": 165.0
+    },
+    "altura_sillin": {
+     "crudo": "800 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "media",
+     "notas": "Ficha: '820/800 mm' (dos posiciones); se toma la baja",
+     "valor": 800.0
+    },
+    "freno_delantero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Ficha: 'Pinza de cuatro pistones con anclaje radial'",
+     "valor": "disco"
+    },
+    "disco_delantero_mm": {
+     "crudo": "320 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 320.0
+    },
+    "freno_trasero": {
+     "crudo": "disco",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": "Solo disco de 240 mm",
+     "valor": "disco"
+    },
+    "suspension_delantera": {
+     "crudo": "WP APEX 43",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": "WP APEX 43"
+    },
+    "recorrido_delantero": {
+     "crudo": "150 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 150.0
+    },
+    "distancia_ejes": {
+     "crudo": "1357 mm",
+     "fuente_tipo": "web_marca",
+     "fuente_url": "https://www.ktm.com/es-co/models/naked-bike/2027-ktm-390-duke/especificaciones-tecnicas.html",
+     "fecha": "2026-11-13",
+     "confianza": "alta",
+     "notas": null,
+     "valor": 1357.0
+    }
+   },
+   "precio": null
   },
   {
    "slug": "suzuki-gixxer-fi-150-abs-2027",

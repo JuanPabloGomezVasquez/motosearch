@@ -57,7 +57,7 @@ const conteoConf = Object.values(v.specs).reduce<Record<string, number>>((acc, d
       </>
     ) : (
       <p class="muted">
-        Sin precio cargado. {v.estado === "descontinuada" ? "Las versiones descontinuadas no llevan precio." : "La web de la marca no mostraba un precio de lista confiable el día de la consulta."}
+        Sin precio cargado. {v.estado === "descontinuada" ? "Las versiones descontinuadas no llevan precio." : "No se encontró un precio de lista confiable el día de la consulta."}
       </p>
     )}
   </section>

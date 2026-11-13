@@ -336,7 +336,11 @@ export function graficas(vs: Version[]): Grafica[] {
     titulo: "Precio sugerido",
     unidad: "COP",
     barras: barrasPrecio,
-    nota: "Precio de lista sin bonos ni financiación. No incluye matrícula ni SOAT (Honda no lo aclara).",
+    nota:
+      "Precio de lista sin bonos ni financiación, sin matrícula ni SOAT" +
+      (vs.some((v) => v.precio && (v.precio.incluye_matricula === null || v.precio.incluye_soat === null))
+        ? " (alguna marca no aclara si los incluye)."
+        : "."),
     publicable: barrasPrecio.filter((b) => b.valor !== null).length >= 2,
   });
   return out;
