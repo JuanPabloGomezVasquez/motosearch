@@ -2,17 +2,21 @@
 // verdad al comparar es la URL (?v=a,b,c), que se puede compartir.
 export const MAX = 3;
 const CLAVE = "motosearch:seleccion";
+// Copia en memoria: si el navegador bloquea localStorage, la selección sigue funcionando en la página.
+let memoria: string[] = [];
 
 export function leer(): string[] {
   try {
     const v = JSON.parse(localStorage.getItem(CLAVE) ?? "[]");
-    return Array.isArray(v) ? v.filter((s) => typeof s === "string").slice(0, MAX) : [];
+    if (Array.isArray(v)) memoria = v.filter((s) => typeof s === "string").slice(0, MAX);
   } catch {
-    return [];
+    /* sin almacenamiento: se usa la copia en memoria */
   }
+  return [...memoria];
 }
 
 export function guardar(slugs: string[]): void {
+  memoria = slugs.slice(0, MAX);
   try {
     localStorage.setItem(CLAVE, JSON.stringify(slugs.slice(0, MAX)));
   } catch {

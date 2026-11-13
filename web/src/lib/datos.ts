@@ -163,6 +163,12 @@ export const FUENTE_LEGIBLE: Record<string, string> = {
 };
 
 export function url(ruta: string): string {
+  // Copia estática con rutas relativas (ver scripts/copia-relativa.mjs): cada página declara
+  // su raíz en <meta name="motosearch-raiz"> y los enlaces apuntan a .../index.html.
+  if (typeof document !== "undefined") {
+    const raiz = document.querySelector('meta[name="motosearch-raiz"]')?.getAttribute("content");
+    if (raiz != null) return raiz + ruta.replace(/^\//, "").replace(/(^|\/)(\?|$)/, "$1index.html$2");
+  }
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   return base + ruta;
 }

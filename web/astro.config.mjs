@@ -5,4 +5,5 @@ export default defineConfig({
   output: "static",
   base: process.env.BASE ?? "/",
   trailingSlash: "always",
+  build: { assets: "assets" },
 });
